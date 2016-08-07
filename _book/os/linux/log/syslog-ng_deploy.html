@@ -5,7 +5,7 @@
         <!-- head:start -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>RHEL7 删除控制组 | 云图</title>
+        <title>syslog-ng部署和维护 | 云图</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.5">
@@ -15,33 +15,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
-        <link rel="shortcut icon" href="../../../../../gitbook/images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
         
-    <link rel="stylesheet" href="../../../../../gitbook/style.css">
+    <link rel="stylesheet" href="../../../gitbook/style.css">
     
         
-        <link rel="stylesheet" href="../../../../../gitbook/plugins/gitbook-plugin-disqus/plugin.css">
-        
-    
-        
-        <link rel="stylesheet" href="../../../../../gitbook/plugins/gitbook-plugin-codeblock-filename/block.css">
+        <link rel="stylesheet" href="../../../gitbook/plugins/gitbook-plugin-disqus/plugin.css">
         
     
         
-        <link rel="stylesheet" href="../../../../../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.css">
+        <link rel="stylesheet" href="../../../gitbook/plugins/gitbook-plugin-codeblock-filename/block.css">
         
     
         
-        <link rel="stylesheet" href="../../../../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        <link rel="stylesheet" href="../../../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.css">
         
     
         
-        <link rel="stylesheet" href="../../../../../gitbook/plugins/gitbook-plugin-search/search.css">
+        <link rel="stylesheet" href="../../../gitbook/plugins/gitbook-plugin-highlight/website.css">
         
     
         
-        <link rel="stylesheet" href="../../../../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        <link rel="stylesheet" href="../../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
         
     
     
@@ -49,10 +49,10 @@
         
     
     
-    <link rel="next" href="../../../../../os/linux/kernel/cgroups/rhel7/modify_control_groups.html" />
+    <link rel="next" href="../../../os/linux/kernel/index.html" />
     
     
-    <link rel="prev" href="../../../../../os/linux/kernel/cgroups/rhel7/using_control_groups.html" />
+    <link rel="prev" href="../../../os/linux/log/syslog-ng_3.5_fails_with_systemctl.html" />
     
 
         <!-- head:end -->
@@ -61,11 +61,11 @@
         <!-- body:start -->
         
     <div class="book"
-        data-level="2.1.4.1.2.3"
-        data-chapter-title="RHEL7 删除控制组"
-        data-filepath="os/linux/kernel/cgroups/rhel7/removing_control_groups.md"
-        data-basepath="../../../../.."
-        data-revision="Tue Jul 12 2016 23:55:45 GMT+0800 (CST)"
+        data-level="2.1.3.5"
+        data-chapter-title="syslog-ng部署和维护"
+        data-filepath="os/linux/log/syslog-ng_deploy.md"
+        data-basepath="../../.."
+        data-revision="Sat Jul 23 2016 09:53:54 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -84,7 +84,7 @@
         <li class="chapter " data-level="0" data-path="index.html">
             
                 
-                    <a href="../../../../../index.html">
+                    <a href="../../../index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -97,7 +97,7 @@
         <li class="chapter " data-level="1" data-path="server/index.html">
             
                 
-                    <a href="../../../../../server/index.html">
+                    <a href="../../../server/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -113,7 +113,7 @@
         <li class="chapter " data-level="1.1" data-path="server/ipmi/index.html">
             
                 
-                    <a href="../../../../../server/ipmi/index.html">
+                    <a href="../../../server/ipmi/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -129,13 +129,28 @@
         <li class="chapter " data-level="1.1.1" data-path="server/ipmi/ipmitool_tips.html">
             
                 
-                    <a href="../../../../../server/ipmi/ipmitool_tips.html">
+                    <a href="../../../server/ipmi/ipmitool_tips.html">
                 
                         <i class="fa fa-check"></i>
                         
                             <b>1.1.1.</b>
                         
                         ipmitool使用tips
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="server/ipmi/oob_setup.html">
+            
+                
+                    <a href="../../../server/ipmi/oob_setup.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.2.</b>
+                        
+                        服务器oob带外访问设置
                     </a>
             
             
@@ -149,7 +164,7 @@
         <li class="chapter " data-level="1.2" data-path="server/firmware/index.html">
             
                 
-                    <a href="../../../../../server/firmware/index.html">
+                    <a href="../../../server/firmware/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -165,7 +180,7 @@
         <li class="chapter " data-level="1.2.1" data-path="server/firmware/modify_bios_through_linux_command.html">
             
                 
-                    <a href="../../../../../server/firmware/modify_bios_through_linux_command.html">
+                    <a href="../../../server/firmware/modify_bios_through_linux_command.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -190,7 +205,7 @@
         <li class="chapter " data-level="2" data-path="os/index.html">
             
                 
-                    <a href="../../../../../os/index.html">
+                    <a href="../../../os/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -206,7 +221,7 @@
         <li class="chapter " data-level="2.1" data-path="os/linux/index.html">
             
                 
-                    <a href="../../../../../os/linux/index.html">
+                    <a href="../../../os/linux/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -222,7 +237,7 @@
         <li class="chapter " data-level="2.1.1" data-path="os/linux/boot/index.html">
             
                 
-                    <a href="../../../../../os/linux/boot/index.html">
+                    <a href="../../../os/linux/boot/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -232,12 +247,33 @@
                     </a>
             
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" data-path="os/linux/boot/fail_start_file_system_chek.html">
+            
+                
+                    <a href="../../../os/linux/boot/fail_start_file_system_chek.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.1.1.</b>
+                        
+                        RHEL7升级后磁盘设备label识别错误处理
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
         <li class="chapter " data-level="2.1.2" data-path="os/linux/process/index.html">
             
                 
-                    <a href="../../../../../os/linux/process/index.html">
+                    <a href="../../../os/linux/process/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -253,7 +289,7 @@
         <li class="chapter " data-level="2.1.2.1" data-path="os/linux/process/management/index.html">
             
                 
-                    <a href="../../../../../os/linux/process/management/index.html">
+                    <a href="../../../os/linux/process/management/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -269,7 +305,7 @@
         <li class="chapter " data-level="2.1.2.1.1" data-path="os/linux/process/management/process_stat_indicates.html">
             
                 
-                    <a href="../../../../../os/linux/process/management/process_stat_indicates.html">
+                    <a href="../../../os/linux/process/management/process_stat_indicates.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -281,14 +317,29 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.2.1.2" data-path="os/linux/process/management/check_process_memory_usage.html">
+        <li class="chapter " data-level="2.1.2.1.2" data-path="os/linux/process/management/process_priority_with_nice.html">
             
                 
-                    <a href="../../../../../os/linux/process/management/check_process_memory_usage.html">
+                    <a href="../../../os/linux/process/management/process_priority_with_nice.html">
                 
                         <i class="fa fa-check"></i>
                         
                             <b>2.1.2.1.2.</b>
+                        
+                        使用nice调整进程优先级
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.1.3" data-path="os/linux/process/management/check_process_memory_usage.html">
+            
+                
+                    <a href="../../../os/linux/process/management/check_process_memory_usage.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.2.1.3.</b>
                         
                         检查进程的内存使用
                     </a>
@@ -296,14 +347,14 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.2.1.3" data-path="os/linux/process/management/top_tips.html">
+        <li class="chapter " data-level="2.1.2.1.4" data-path="os/linux/process/management/top_tips.html">
             
                 
-                    <a href="../../../../../os/linux/process/management/top_tips.html">
+                    <a href="../../../os/linux/process/management/top_tips.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>2.1.2.1.3.</b>
+                            <b>2.1.2.1.4.</b>
                         
                         top命令使用tips
                     </a>
@@ -319,7 +370,7 @@
         <li class="chapter " data-level="2.1.2.2" data-path="os/linux/process/selinux/index.html">
             
                 
-                    <a href="../../../../../os/linux/process/selinux/index.html">
+                    <a href="../../../os/linux/process/selinux/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -334,7 +385,7 @@
         <li class="chapter " data-level="2.1.2.3" data-path="os/linux/process/thread/index.html">
             
                 
-                    <a href="../../../../../os/linux/process/thread/index.html">
+                    <a href="../../../os/linux/process/thread/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -350,7 +401,7 @@
         <li class="chapter " data-level="2.1.2.3.1" data-path="os/linux/process/thread/process_vs_thread.html">
             
                 
-                    <a href="../../../../../os/linux/process/thread/process_vs_thread.html">
+                    <a href="../../../os/linux/process/thread/process_vs_thread.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -365,7 +416,7 @@
         <li class="chapter " data-level="2.1.2.3.2" data-path="os/linux/process/thread/check_thread.html">
             
                 
-                    <a href="../../../../../os/linux/process/thread/check_thread.html">
+                    <a href="../../../os/linux/process/thread/check_thread.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -390,7 +441,7 @@
         <li class="chapter " data-level="2.1.3" data-path="os/linux/log/index.html">
             
                 
-                    <a href="../../../../../os/linux/log/index.html">
+                    <a href="../../../os/linux/log/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -406,7 +457,7 @@
         <li class="chapter " data-level="2.1.3.1" data-path="os/linux/log/log_file_management.html">
             
                 
-                    <a href="../../../../../os/linux/log/log_file_management.html">
+                    <a href="../../../os/linux/log/log_file_management.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -421,7 +472,7 @@
         <li class="chapter " data-level="2.1.3.2" data-path="os/linux/log/logrotate.html">
             
                 
-                    <a href="../../../../../os/linux/log/logrotate.html">
+                    <a href="../../../os/linux/log/logrotate.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -436,13 +487,43 @@
         <li class="chapter " data-level="2.1.3.3" data-path="os/linux/log/mcelog.html">
             
                 
-                    <a href="../../../../../os/linux/log/mcelog.html">
+                    <a href="../../../os/linux/log/mcelog.html">
                 
                         <i class="fa fa-check"></i>
                         
                             <b>2.1.3.3.</b>
                         
                         mcelog系统硬件诊断日志搜集工具
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.4" data-path="os/linux/log/syslog-ng_3.5_fails_with_systemctl.html">
+            
+                
+                    <a href="../../../os/linux/log/syslog-ng_3.5_fails_with_systemctl.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.3.4.</b>
+                        
+                        systemd环境syslog-ng启动失败排查
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.3.5" data-path="os/linux/log/syslog-ng_deploy.html">
+            
+                
+                    <a href="../../../os/linux/log/syslog-ng_deploy.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.3.5.</b>
+                        
+                        syslog-ng部署和维护
                     </a>
             
             
@@ -456,7 +537,7 @@
         <li class="chapter " data-level="2.1.4" data-path="os/linux/kernel/index.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/index.html">
+                    <a href="../../../os/linux/kernel/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -472,7 +553,7 @@
         <li class="chapter " data-level="2.1.4.1" data-path="os/linux/kernel/cgroups/index.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/cgroups/index.html">
+                    <a href="../../../os/linux/kernel/cgroups/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -488,7 +569,7 @@
         <li class="chapter " data-level="2.1.4.1.1" data-path="os/linux/kernel/cgroups/rhel6/index.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/cgroups/rhel6/index.html">
+                    <a href="../../../os/linux/kernel/cgroups/rhel6/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -504,7 +585,7 @@
         <li class="chapter " data-level="2.1.4.1.1.1" data-path="os/linux/kernel/cgroups/rhel6/introduction.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/cgroups/rhel6/introduction.html">
+                    <a href="../../../os/linux/kernel/cgroups/rhel6/introduction.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -519,7 +600,7 @@
         <li class="chapter " data-level="2.1.4.1.1.2" data-path="os/linux/kernel/cgroups/rhel6/using_control_groups.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/cgroups/rhel6/using_control_groups.html">
+                    <a href="../../../os/linux/kernel/cgroups/rhel6/using_control_groups.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -539,7 +620,7 @@
         <li class="chapter " data-level="2.1.4.1.2" data-path="os/linux/kernel/cgroups/rhel7/index.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/cgroups/rhel7/index.html">
+                    <a href="../../../os/linux/kernel/cgroups/rhel7/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -555,7 +636,7 @@
         <li class="chapter " data-level="2.1.4.1.2.1" data-path="os/linux/kernel/cgroups/rhel7/introduction.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/cgroups/rhel7/introduction.html">
+                    <a href="../../../os/linux/kernel/cgroups/rhel7/introduction.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -570,7 +651,7 @@
         <li class="chapter " data-level="2.1.4.1.2.2" data-path="os/linux/kernel/cgroups/rhel7/using_control_groups.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/cgroups/rhel7/using_control_groups.html">
+                    <a href="../../../os/linux/kernel/cgroups/rhel7/using_control_groups.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -582,31 +663,16 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.1.4.1.2.3" data-path="os/linux/kernel/cgroups/rhel7/removing_control_groups.html">
+        <li class="chapter " data-level="2.1.4.1.2.3" data-path="os/linux/kernel/cgroups/rhel7/using_libcgroup_tools.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/cgroups/rhel7/removing_control_groups.html">
+                    <a href="../../../os/linux/kernel/cgroups/rhel7/using_libcgroup_tools.html">
                 
                         <i class="fa fa-check"></i>
                         
                             <b>2.1.4.1.2.3.</b>
                         
-                        RHEL7 删除控制组
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="2.1.4.1.2.4" data-path="os/linux/kernel/cgroups/rhel7/modify_control_groups.html">
-            
-                
-                    <a href="../../../../../os/linux/kernel/cgroups/rhel7/modify_control_groups.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.1.4.1.2.4.</b>
-                        
-                        RHEL7 修改控制组
+                        RHEL7 使用libcgroup工具
                     </a>
             
             
@@ -625,7 +691,7 @@
         <li class="chapter " data-level="2.1.4.2" data-path="os/linux/kernel/net/index.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/net/index.html">
+                    <a href="../../../os/linux/kernel/net/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -641,7 +707,7 @@
         <li class="chapter " data-level="2.1.4.2.1" data-path="os/linux/kernel/net/time_wait_bucket_table_overflow.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/net/time_wait_bucket_table_overflow.html">
+                    <a href="../../../os/linux/kernel/net/time_wait_bucket_table_overflow.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -656,7 +722,7 @@
         <li class="chapter " data-level="2.1.4.2.2" data-path="os/linux/kernel/net/kernel_net_example_analysis.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/net/kernel_net_example_analysis.html">
+                    <a href="../../../os/linux/kernel/net/kernel_net_example_analysis.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -676,7 +742,7 @@
         <li class="chapter " data-level="2.1.4.3" data-path="os/linux/kernel/log/index.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/log/index.html">
+                    <a href="../../../os/linux/kernel/log/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -692,7 +758,7 @@
         <li class="chapter " data-level="2.1.4.3.1" data-path="os/linux/kernel/log/ratelimit.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/log/ratelimit.html">
+                    <a href="../../../os/linux/kernel/log/ratelimit.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -712,7 +778,7 @@
         <li class="chapter " data-level="2.1.4.4" data-path="os/linux/kernel/cpu/index.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/cpu/index.html">
+                    <a href="../../../os/linux/kernel/cpu/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -728,7 +794,7 @@
         <li class="chapter " data-level="2.1.4.4.1" data-path="os/linux/kernel/cpu/cpu_models_and_topology.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/cpu/cpu_models_and_topology.html">
+                    <a href="../../../os/linux/kernel/cpu/cpu_models_and_topology.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -743,28 +809,28 @@
         <li class="chapter " data-level="2.1.4.4.2" data-path="os/linux/kernel/cpu/cpu_affinity.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/cpu/cpu_affinity.html">
+                    <a href="../../../os/linux/kernel/cpu/cpu_affinity.html">
                 
                         <i class="fa fa-check"></i>
                         
                             <b>2.1.4.4.2.</b>
                         
-                        CPU亲和性
+                        cpu_affinity
                     </a>
             
             
         </li>
     
-        <li class="chapter " data-level="2.1.4.4.3" data-path="os/linux/kernel/cpu/interrupt_and_cpu_affinity.html">
+        <li class="chapter " data-level="2.1.4.4.3" data-path="os/linux/kernel/cpu/interrupt_and_smp_affinity.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/cpu/interrupt_and_cpu_affinity.html">
+                    <a href="../../../os/linux/kernel/cpu/interrupt_and_smp_affinity.html">
                 
                         <i class="fa fa-check"></i>
                         
                             <b>2.1.4.4.3.</b>
                         
-                        中断和CPU亲和性
+                        中断和smp_affinity
                     </a>
             
             
@@ -773,7 +839,7 @@
         <li class="chapter " data-level="2.1.4.4.4" data-path="os/linux/kernel/cpu/softirq.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/cpu/softirq.html">
+                    <a href="../../../os/linux/kernel/cpu/softirq.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -788,7 +854,7 @@
         <li class="chapter " data-level="2.1.4.4.5" data-path="os/linux/kernel/cpu/microcode.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/cpu/microcode.html">
+                    <a href="../../../os/linux/kernel/cpu/microcode.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -803,7 +869,7 @@
         <li class="chapter " data-level="2.1.4.4.6" data-path="os/linux/kernel/cpu/linux_timer_management.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/cpu/linux_timer_management.html">
+                    <a href="../../../os/linux/kernel/cpu/linux_timer_management.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -818,7 +884,7 @@
         <li class="chapter " data-level="2.1.4.4.7" data-path="os/linux/kernel/cpu/system_load_averages.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/cpu/system_load_averages.html">
+                    <a href="../../../os/linux/kernel/cpu/system_load_averages.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -838,7 +904,7 @@
         <li class="chapter " data-level="2.1.4.5" data-path="os/linux/kernel/driver/index.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/driver/index.html">
+                    <a href="../../../os/linux/kernel/driver/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -854,7 +920,7 @@
         <li class="chapter " data-level="2.1.4.5.1" data-path="os/linux/kernel/driver/kms.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/driver/kms.html">
+                    <a href="../../../os/linux/kernel/driver/kms.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -869,7 +935,7 @@
         <li class="chapter " data-level="2.1.4.5.2" data-path="os/linux/kernel/driver/dkms.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/driver/dkms.html">
+                    <a href="../../../os/linux/kernel/driver/dkms.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -889,7 +955,7 @@
         <li class="chapter " data-level="2.1.4.6" data-path="os/linux/kernel/memory/index.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/memory/index.html">
+                    <a href="../../../os/linux/kernel/memory/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -905,7 +971,7 @@
         <li class="chapter " data-level="2.1.4.6.1" data-path="os/linux/kernel/memory/page_allocation_failure.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/memory/page_allocation_failure.html">
+                    <a href="../../../os/linux/kernel/memory/page_allocation_failure.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -920,7 +986,7 @@
         <li class="chapter " data-level="2.1.4.6.2" data-path="os/linux/kernel/memory/ksm.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/memory/ksm.html">
+                    <a href="../../../os/linux/kernel/memory/ksm.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -940,7 +1006,7 @@
         <li class="chapter " data-level="2.1.4.7" data-path="os/linux/kernel/storage/index.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/storage/index.html">
+                    <a href="../../../os/linux/kernel/storage/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -956,7 +1022,7 @@
         <li class="chapter " data-level="2.1.4.7.1" data-path="os/linux/kernel/storage/task_events_blocked_by_block_device.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/storage/task_events_blocked_by_block_device.html">
+                    <a href="../../../os/linux/kernel/storage/task_events_blocked_by_block_device.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -976,7 +1042,7 @@
         <li class="chapter " data-level="2.1.4.8" data-path="os/linux/kernel/tracing/index.html">
             
                 
-                    <a href="../../../../../os/linux/kernel/tracing/index.html">
+                    <a href="../../../os/linux/kernel/tracing/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -996,7 +1062,7 @@
         <li class="chapter " data-level="2.1.5" data-path="os/linux/device/index.html">
             
                 
-                    <a href="../../../../../os/linux/device/index.html">
+                    <a href="../../../os/linux/device/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1012,7 +1078,7 @@
         <li class="chapter " data-level="2.1.5.1" data-path="os/linux/device/udev/index.html">
             
                 
-                    <a href="../../../../../os/linux/device/udev/index.html">
+                    <a href="../../../os/linux/device/udev/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1028,7 +1094,7 @@
         <li class="chapter " data-level="2.1.5.1.1" data-path="os/linux/device/udev/udev_infrastructure.html">
             
                 
-                    <a href="../../../../../os/linux/device/udev/udev_infrastructure.html">
+                    <a href="../../../os/linux/device/udev/udev_infrastructure.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1053,7 +1119,7 @@
         <li class="chapter " data-level="2.1.6" data-path="os/linux/storage/index.html">
             
                 
-                    <a href="../../../../../os/linux/storage/index.html">
+                    <a href="../../../os/linux/storage/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1069,7 +1135,7 @@
         <li class="chapter " data-level="2.1.6.1" data-path="os/linux/storage/disk/index.html">
             
                 
-                    <a href="../../../../../os/linux/storage/disk/index.html">
+                    <a href="../../../os/linux/storage/disk/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1085,7 +1151,7 @@
         <li class="chapter " data-level="2.1.6.1.1" data-path="os/linux/storage/disk/disk_io_scheduler.html">
             
                 
-                    <a href="../../../../../os/linux/storage/disk/disk_io_scheduler.html">
+                    <a href="../../../os/linux/storage/disk/disk_io_scheduler.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1100,7 +1166,7 @@
         <li class="chapter " data-level="2.1.6.1.2" data-path="os/linux/storage/disk/ssd_hdd_mix_io_scheduler.html">
             
                 
-                    <a href="../../../../../os/linux/storage/disk/ssd_hdd_mix_io_scheduler.html">
+                    <a href="../../../os/linux/storage/disk/ssd_hdd_mix_io_scheduler.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1115,7 +1181,7 @@
         <li class="chapter " data-level="2.1.6.1.3" data-path="os/linux/storage/disk/block_dump_monitor_linux_io.html">
             
                 
-                    <a href="../../../../../os/linux/storage/disk/block_dump_monitor_linux_io.html">
+                    <a href="../../../os/linux/storage/disk/block_dump_monitor_linux_io.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1130,7 +1196,7 @@
         <li class="chapter " data-level="2.1.6.1.4" data-path="os/linux/storage/disk/iotop.html">
             
                 
-                    <a href="../../../../../os/linux/storage/disk/iotop.html">
+                    <a href="../../../os/linux/storage/disk/iotop.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1170,7 +1236,7 @@
         <li class="chapter " data-level="2.1.6.3" data-path="os/linux/storage/filesystem/index.html">
             
                 
-                    <a href="../../../../../os/linux/storage/filesystem/index.html">
+                    <a href="../../../os/linux/storage/filesystem/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1186,7 +1252,7 @@
         <li class="chapter " data-level="2.1.6.3.1" data-path="os/linux/storage/filesystem/ext/index.html">
             
                 
-                    <a href="../../../../../os/linux/storage/filesystem/ext/index.html">
+                    <a href="../../../os/linux/storage/filesystem/ext/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1228,7 +1294,7 @@
         <li class="chapter " data-level="2.1.6.3.2" data-path="os/linux/storage/filesystem/performance/index.html">
             
                 
-                    <a href="../../../../../os/linux/storage/filesystem/performance/index.html">
+                    <a href="../../../os/linux/storage/filesystem/performance/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1266,7 +1332,7 @@
         <li class="chapter " data-level="2.1.7" data-path="os/linux/network/index.html">
             
                 
-                    <a href="../../../../../os/linux/network/index.html">
+                    <a href="../../../os/linux/network/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1282,7 +1348,7 @@
         <li class="chapter " data-level="2.1.7.1" data-path="os/linux/network/iproute2/index.html">
             
                 
-                    <a href="../../../../../os/linux/network/iproute2/index.html">
+                    <a href="../../../os/linux/network/iproute2/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1298,7 +1364,7 @@
         <li class="chapter " data-level="2.1.7.1.1" data-path="os/linux/network/iproute2/ip.html">
             
                 
-                    <a href="../../../../../os/linux/network/iproute2/ip.html">
+                    <a href="../../../os/linux/network/iproute2/ip.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1318,7 +1384,7 @@
         <li class="chapter " data-level="2.1.7.2" data-path="os/linux/network/scaling/index.html">
             
                 
-                    <a href="../../../../../os/linux/network/scaling/index.html">
+                    <a href="../../../os/linux/network/scaling/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1334,7 +1400,7 @@
         <li class="chapter " data-level="2.1.7.2.1" data-path="os/linux/network/scaling/rss.html">
             
                 
-                    <a href="../../../../../os/linux/network/scaling/rss.html">
+                    <a href="../../../os/linux/network/scaling/rss.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1356,9 +1422,17 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.8" data-path="os/linux/backup/READMD.html">
+        <li class="chapter " data-level="2.1.8" data-path="os/linux/backup/index.html">
             
-            <span><b>2.1.8.</b> 备份</span>
+                
+                    <a href="../../../os/linux/backup/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.8.</b>
+                        
+                        备份
+                    </a>
             
             
             <ul class="articles">
@@ -1367,7 +1441,7 @@
         <li class="chapter " data-level="2.1.8.1" data-path="os/linux/backup/full_system_backup_with_tar.html">
             
                 
-                    <a href="../../../../../os/linux/backup/full_system_backup_with_tar.html">
+                    <a href="../../../os/linux/backup/full_system_backup_with_tar.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1382,7 +1456,7 @@
         <li class="chapter " data-level="2.1.8.2" data-path="os/linux/backup/full_system_backup_with_rsync.html">
             
                 
-                    <a href="../../../../../os/linux/backup/full_system_backup_with_rsync.html">
+                    <a href="../../../os/linux/backup/full_system_backup_with_rsync.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1402,7 +1476,7 @@
         <li class="chapter " data-level="2.1.9" data-path="os/linux/redhat/index.html">
             
                 
-                    <a href="../../../../../os/linux/redhat/index.html">
+                    <a href="../../../os/linux/redhat/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1418,7 +1492,7 @@
         <li class="chapter " data-level="2.1.9.1" data-path="os/linux/redhat/system_administration/index.html">
             
                 
-                    <a href="../../../../../os/linux/redhat/system_administration/index.html">
+                    <a href="../../../os/linux/redhat/system_administration/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1434,7 +1508,7 @@
         <li class="chapter " data-level="2.1.9.1.1" data-path="os/linux/redhat/system_administration/grub2/index.html">
             
                 
-                    <a href="../../../../../os/linux/redhat/system_administration/grub2/index.html">
+                    <a href="../../../os/linux/redhat/system_administration/grub2/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1456,7 +1530,7 @@
         <li class="chapter " data-level="2.1.9.1.3" data-path="os/linux/redhat/system_administration/systemd/index.html">
             
                 
-                    <a href="../../../../../os/linux/redhat/system_administration/systemd/index.html">
+                    <a href="../../../os/linux/redhat/system_administration/systemd/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1472,7 +1546,7 @@
         <li class="chapter " data-level="2.1.9.1.3.1" data-path="os/linux/redhat/system_administration/systemd/change_hostname_by_systemd.html">
             
                 
-                    <a href="../../../../../os/linux/redhat/system_administration/systemd/change_hostname_by_systemd.html">
+                    <a href="../../../os/linux/redhat/system_administration/systemd/change_hostname_by_systemd.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1497,7 +1571,7 @@
         <li class="chapter " data-level="2.1.9.2" data-path="os/linux/redhat/package/index.html">
             
                 
-                    <a href="../../../../../os/linux/redhat/package/index.html">
+                    <a href="../../../os/linux/redhat/package/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1513,7 +1587,7 @@
         <li class="chapter " data-level="2.1.9.2.1" data-path="os/linux/redhat/package/cannot_retrieve_metalink_for_repository.html">
             
                 
-                    <a href="../../../../../os/linux/redhat/package/cannot_retrieve_metalink_for_repository.html">
+                    <a href="../../../os/linux/redhat/package/cannot_retrieve_metalink_for_repository.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1528,7 +1602,7 @@
         <li class="chapter " data-level="2.1.9.2.2" data-path="os/linux/redhat/package/rpm_tips.html">
             
                 
-                    <a href="../../../../../os/linux/redhat/package/rpm_tips.html">
+                    <a href="../../../os/linux/redhat/package/rpm_tips.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1543,7 +1617,7 @@
         <li class="chapter " data-level="2.1.9.2.3" data-path="os/linux/redhat/package/auto_yum_upgrade.html">
             
                 
-                    <a href="../../../../../os/linux/redhat/package/auto_yum_upgrade.html">
+                    <a href="../../../os/linux/redhat/package/auto_yum_upgrade.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1558,7 +1632,7 @@
         <li class="chapter " data-level="2.1.9.2.4" data-path="os/linux/redhat/package/yum_after_mini_install.html">
             
                 
-                    <a href="../../../../../os/linux/redhat/package/yum_after_mini_install.html">
+                    <a href="../../../os/linux/redhat/package/yum_after_mini_install.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1573,13 +1647,43 @@
         <li class="chapter " data-level="2.1.9.2.5" data-path="os/linux/redhat/package/yum_tips.html">
             
                 
-                    <a href="../../../../../os/linux/redhat/package/yum_tips.html">
+                    <a href="../../../os/linux/redhat/package/yum_tips.html">
                 
                         <i class="fa fa-check"></i>
                         
                             <b>2.1.9.2.5.</b>
                         
                         yum使用tips
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9.2.6" data-path="os/linux/redhat/package/source_rpms_under_centos.html">
+            
+                
+                    <a href="../../../os/linux/redhat/package/source_rpms_under_centos.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.9.2.6.</b>
+                        
+                        使用源代码RPMs
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9.2.7" data-path="os/linux/redhat/package/manage_package_with_dnf.html">
+            
+                
+                    <a href="../../../os/linux/redhat/package/manage_package_with_dnf.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.9.2.7.</b>
+                        
+                        使用dnf管理软件包
                     </a>
             
             
@@ -1593,7 +1697,7 @@
         <li class="chapter " data-level="2.1.9.3" data-path="os/linux/redhat/daemon_tips.html">
             
                 
-                    <a href="../../../../../os/linux/redhat/daemon_tips.html">
+                    <a href="../../../os/linux/redhat/daemon_tips.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1613,7 +1717,7 @@
         <li class="chapter " data-level="2.1.10" data-path="os/linux/debian/index.html">
             
                 
-                    <a href="../../../../../os/linux/debian/index.html">
+                    <a href="../../../os/linux/debian/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1629,7 +1733,7 @@
         <li class="chapter " data-level="2.1.10.1" data-path="os/linux/debian/package/index.html">
             
                 
-                    <a href="../../../../../os/linux/debian/package/index.html">
+                    <a href="../../../os/linux/debian/package/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1645,7 +1749,7 @@
         <li class="chapter " data-level="2.1.10.1.1" data-path="os/linux/debian/package/debian_mini_install_packages_suggest.html">
             
                 
-                    <a href="../../../../../os/linux/debian/package/debian_mini_install_packages_suggest.html">
+                    <a href="../../../os/linux/debian/package/debian_mini_install_packages_suggest.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1670,7 +1774,7 @@
         <li class="chapter " data-level="2.1.11" data-path="os/linux/gentoo/index.html">
             
                 
-                    <a href="../../../../../os/linux/gentoo/index.html">
+                    <a href="../../../os/linux/gentoo/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1686,7 +1790,7 @@
         <li class="chapter " data-level="2.1.11.1" data-path="os/linux/gentoo/install_gentoo_on_macbook.html">
             
                 
-                    <a href="../../../../../os/linux/gentoo/install_gentoo_on_macbook.html">
+                    <a href="../../../os/linux/gentoo/install_gentoo_on_macbook.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1701,7 +1805,7 @@
         <li class="chapter " data-level="2.1.11.2" data-path="os/linux/gentoo/portage.html">
             
                 
-                    <a href="../../../../../os/linux/gentoo/portage.html">
+                    <a href="../../../os/linux/gentoo/portage.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1716,7 +1820,7 @@
         <li class="chapter " data-level="2.1.11.3" data-path="os/linux/gentoo/gcc_profile_invalid.html">
             
                 
-                    <a href="../../../../../os/linux/gentoo/gcc_profile_invalid.html">
+                    <a href="../../../os/linux/gentoo/gcc_profile_invalid.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1731,7 +1835,7 @@
         <li class="chapter " data-level="2.1.11.4" data-path="os/linux/gentoo/nvidia.html">
             
                 
-                    <a href="../../../../../os/linux/gentoo/nvidia.html">
+                    <a href="../../../os/linux/gentoo/nvidia.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1746,7 +1850,7 @@
         <li class="chapter " data-level="2.1.11.5" data-path="os/linux/gentoo/intel.html">
             
                 
-                    <a href="../../../../../os/linux/gentoo/intel.html">
+                    <a href="../../../os/linux/gentoo/intel.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1768,7 +1872,7 @@
         <li class="chapter " data-level="2.1.11.7" data-path="os/linux/gentoo/convert_kde_to_xfce.html">
             
                 
-                    <a href="../../../../../os/linux/gentoo/convert_kde_to_xfce.html">
+                    <a href="../../../os/linux/gentoo/convert_kde_to_xfce.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1783,7 +1887,7 @@
         <li class="chapter " data-level="2.1.11.8" data-path="os/linux/gentoo/xfce.html">
             
                 
-                    <a href="../../../../../os/linux/gentoo/xfce.html">
+                    <a href="../../../os/linux/gentoo/xfce.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1798,7 +1902,7 @@
         <li class="chapter " data-level="2.1.11.9" data-path="os/linux/gentoo/chinese_input.html">
             
                 
-                    <a href="../../../../../os/linux/gentoo/chinese_input.html">
+                    <a href="../../../os/linux/gentoo/chinese_input.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1813,7 +1917,7 @@
         <li class="chapter " data-level="2.1.11.10" data-path="os/linux/gentoo/broadcom_wifi.html">
             
                 
-                    <a href="../../../../../os/linux/gentoo/broadcom_wifi.html">
+                    <a href="../../../os/linux/gentoo/broadcom_wifi.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1828,7 +1932,7 @@
         <li class="chapter " data-level="2.1.11.11" data-path="os/linux/gentoo/suspend_hibernate.html">
             
                 
-                    <a href="../../../../../os/linux/gentoo/suspend_hibernate.html">
+                    <a href="../../../os/linux/gentoo/suspend_hibernate.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1843,7 +1947,7 @@
         <li class="chapter " data-level="2.1.11.12" data-path="os/linux/gentoo/emerge_tips.html">
             
                 
-                    <a href="../../../../../os/linux/gentoo/emerge_tips.html">
+                    <a href="../../../os/linux/gentoo/emerge_tips.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1863,7 +1967,7 @@
         <li class="chapter " data-level="2.1.12" data-path="os/linux/utility/index.html">
             
                 
-                    <a href="../../../../../os/linux/utility/index.html">
+                    <a href="../../../os/linux/utility/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1879,7 +1983,7 @@
         <li class="chapter " data-level="2.1.12.1" data-path="os/linux/utility/screen.html">
             
                 
-                    <a href="../../../../../os/linux/utility/screen.html">
+                    <a href="../../../os/linux/utility/screen.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1894,7 +1998,7 @@
         <li class="chapter " data-level="2.1.12.2" data-path="os/linux/utility/shuf.html">
             
                 
-                    <a href="../../../../../os/linux/utility/shuf.html">
+                    <a href="../../../os/linux/utility/shuf.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1919,7 +2023,7 @@
         <li class="chapter " data-level="2.2" data-path="os/freebsd/index.html">
             
                 
-                    <a href="../../../../../os/freebsd/index.html">
+                    <a href="../../../os/freebsd/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1935,7 +2039,7 @@
         <li class="chapter " data-level="2.2.1" data-path="os/freebsd/intruduce_freebsd.html">
             
                 
-                    <a href="../../../../../os/freebsd/intruduce_freebsd.html">
+                    <a href="../../../os/freebsd/intruduce_freebsd.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1950,7 +2054,7 @@
         <li class="chapter " data-level="2.2.2" data-path="os/freebsd/install_freebsd.html">
             
                 
-                    <a href="../../../../../os/freebsd/install_freebsd.html">
+                    <a href="../../../os/freebsd/install_freebsd.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1965,7 +2069,7 @@
         <li class="chapter " data-level="2.2.3" data-path="os/freebsd/packages_and_ports.html">
             
                 
-                    <a href="../../../../../os/freebsd/packages_and_ports.html">
+                    <a href="../../../os/freebsd/packages_and_ports.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1980,7 +2084,7 @@
         <li class="chapter " data-level="2.2.4" data-path="os/freebsd/freebsd_on_thinkpad.html">
             
                 
-                    <a href="../../../../../os/freebsd/freebsd_on_thinkpad.html">
+                    <a href="../../../os/freebsd/freebsd_on_thinkpad.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -1995,7 +2099,7 @@
         <li class="chapter " data-level="2.2.5" data-path="os/freebsd/freebsd_wireless.html">
             
                 
-                    <a href="../../../../../os/freebsd/freebsd_wireless.html">
+                    <a href="../../../os/freebsd/freebsd_wireless.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2015,7 +2119,7 @@
         <li class="chapter " data-level="2.3" data-path="os/windows/index.html">
             
                 
-                    <a href="../../../../../os/windows/index.html">
+                    <a href="../../../os/windows/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2031,7 +2135,7 @@
         <li class="chapter " data-level="2.3.1" data-path="os/windows/firewall/index.html">
             
                 
-                    <a href="../../../../../os/windows/firewall/index.html">
+                    <a href="../../../os/windows/firewall/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2047,7 +2151,7 @@
         <li class="chapter " data-level="2.3.1.1" data-path="os/windows/firewall/view_firewall_and_ipsec_events.html">
             
                 
-                    <a href="../../../../../os/windows/firewall/view_firewall_and_ipsec_events.html">
+                    <a href="../../../os/windows/firewall/view_firewall_and_ipsec_events.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2077,7 +2181,7 @@
         <li class="chapter " data-level="3" data-path="network/index.html">
             
                 
-                    <a href="../../../../../network/index.html">
+                    <a href="../../../network/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2090,14 +2194,50 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.1" data-path="network/link_aggregation/index.html">
+        <li class="chapter " data-level="3.1" data-path="network/tcpip/index.html">
             
                 
-                    <a href="../../../../../network/link_aggregation/index.html">
+                    <a href="../../../network/tcpip/index.html">
                 
                         <i class="fa fa-check"></i>
                         
                             <b>3.1.</b>
+                        
+                        TCP/IP
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="network/tcpip/tcp_established_connections.html">
+            
+                
+                    <a href="../../../network/tcpip/tcp_established_connections.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.1.</b>
+                        
+                        TCP连接数检查
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="network/link_aggregation/index.html">
+            
+                
+                    <a href="../../../network/link_aggregation/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
                         
                         链路聚合
                     </a>
@@ -2106,14 +2246,14 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.1.1" data-path="network/link_aggregation/lacp/index.html">
+        <li class="chapter " data-level="3.2.1" data-path="network/link_aggregation/lacp/index.html">
             
                 
-                    <a href="../../../../../network/link_aggregation/lacp/index.html">
+                    <a href="../../../network/link_aggregation/lacp/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>3.1.1.</b>
+                            <b>3.2.1.</b>
                         
                         LACP
                     </a>
@@ -2122,14 +2262,14 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.1.1.1" data-path="network/link_aggregation/lacp/network_lacp_infrastructure.html">
+        <li class="chapter " data-level="3.2.1.1" data-path="network/link_aggregation/lacp/network_lacp_infrastructure.html">
             
                 
-                    <a href="../../../../../network/link_aggregation/lacp/network_lacp_infrastructure.html">
+                    <a href="../../../network/link_aggregation/lacp/network_lacp_infrastructure.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>3.1.1.1.</b>
+                            <b>3.2.1.1.</b>
                         
                         LACP原理
                     </a>
@@ -2137,14 +2277,14 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.1.2" data-path="network/link_aggregation/lacp/network_lacp_ad_select.html">
+        <li class="chapter " data-level="3.2.1.2" data-path="network/link_aggregation/lacp/network_lacp_ad_select.html">
             
                 
-                    <a href="../../../../../network/link_aggregation/lacp/network_lacp_ad_select.html">
+                    <a href="../../../network/link_aggregation/lacp/network_lacp_ad_select.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>3.1.1.2.</b>
+                            <b>3.2.1.2.</b>
                         
                         LACP的ad_select参数
                     </a>
@@ -2152,14 +2292,14 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.1.3" data-path="network/link_aggregation/lacp/network_lacp_tcpdump.html">
+        <li class="chapter " data-level="3.2.1.3" data-path="network/link_aggregation/lacp/network_lacp_tcpdump.html">
             
                 
-                    <a href="../../../../../network/link_aggregation/lacp/network_lacp_tcpdump.html">
+                    <a href="../../../network/link_aggregation/lacp/network_lacp_tcpdump.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>3.1.1.3.</b>
+                            <b>3.2.1.3.</b>
                         
                         LACP数据包分析
                     </a>
@@ -2177,14 +2317,14 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="network/dpdk/index.html">
+        <li class="chapter " data-level="3.3" data-path="network/dpdk/index.html">
             
                 
-                    <a href="../../../../../network/dpdk/index.html">
+                    <a href="../../../network/dpdk/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>3.2.</b>
+                            <b>3.3.</b>
                         
                         数据平面开发套件DPDK
                     </a>
@@ -2193,14 +2333,14 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.2.1" data-path="network/dpdk/dpdk_for_linux.html">
+        <li class="chapter " data-level="3.3.1" data-path="network/dpdk/dpdk_for_linux.html">
             
                 
-                    <a href="../../../../../network/dpdk/dpdk_for_linux.html">
+                    <a href="../../../network/dpdk/dpdk_for_linux.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>3.2.1.</b>
+                            <b>3.3.1.</b>
                         
                         在Linux上使用DPDK
                     </a>
@@ -2213,14 +2353,14 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3" data-path="network/packet_analysis/index.html">
+        <li class="chapter " data-level="3.4" data-path="network/packet_analysis/index.html">
             
                 
-                    <a href="../../../../../network/packet_analysis/index.html">
+                    <a href="../../../network/packet_analysis/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>3.3.</b>
+                            <b>3.4.</b>
                         
                         网络数据包分析
                     </a>
@@ -2229,14 +2369,14 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.3.1" data-path="network/packet_analysis/tcpdump_example.html">
+        <li class="chapter " data-level="3.4.1" data-path="network/packet_analysis/tcpdump_example.html">
             
                 
-                    <a href="../../../../../network/packet_analysis/tcpdump_example.html">
+                    <a href="../../../network/packet_analysis/tcpdump_example.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>3.3.1.</b>
+                            <b>3.4.1.</b>
                         
                         tcpdump实例介绍
                     </a>
@@ -2244,9 +2384,32 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3.2" data-path="tcpdump_avoid_packets_dropped_by_kernel_messages.html">
+        <li class="chapter " data-level="3.4.2" data-path="network/packet_analysis/tcpdump_avoid_packets_dropped_by_kernel_messages.html">
             
-            <span><b>3.3.2.</b> tcpdump避免&quot;packets dropped by kernel&quot;</span>
+                
+                    <a href="../../../network/packet_analysis/tcpdump_avoid_packets_dropped_by_kernel_messages.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.2.</b>
+                        
+                        tcpdump避免&quot;packets dropped by kernel&quot;
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.3" data-path="network/packet_analysis/udp_tcp_checksum_errors_from_tcpdump_nic_hardware_offloading.html">
+            
+                
+                    <a href="../../../network/packet_analysis/udp_tcp_checksum_errors_from_tcpdump_nic_hardware_offloading.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.3.</b>
+                        
+                        tcpdump在启用TCP卸载功能的网卡上报告&quot;checksum error&quot;
+                    </a>
             
             
         </li>
@@ -2264,7 +2427,7 @@
         <li class="chapter " data-level="4" data-path="storage/index.html">
             
                 
-                    <a href="../../../../../storage/index.html">
+                    <a href="../../../storage/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2280,7 +2443,7 @@
         <li class="chapter " data-level="4.1" data-path="storage/das/index.html">
             
                 
-                    <a href="../../../../../storage/das/index.html">
+                    <a href="../../../storage/das/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2303,7 +2466,7 @@
         <li class="chapter " data-level="4.1.2" data-path="storage/das/mpt2sas_driver.html">
             
                 
-                    <a href="../../../../../storage/das/mpt2sas_driver.html">
+                    <a href="../../../storage/das/mpt2sas_driver.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2318,7 +2481,7 @@
         <li class="chapter " data-level="4.1.3" data-path="storage/das/mpt2sas_offline_fail_disk.html">
             
                 
-                    <a href="../../../../../storage/das/mpt2sas_offline_fail_disk.html">
+                    <a href="../../../storage/das/mpt2sas_offline_fail_disk.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2333,7 +2496,7 @@
         <li class="chapter " data-level="4.1.4" data-path="storage/das/smart.html">
             
                 
-                    <a href="../../../../../storage/das/smart.html">
+                    <a href="../../../storage/das/smart.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2353,7 +2516,7 @@
         <li class="chapter " data-level="4.2" data-path="storage/glusterfs/index.html">
             
                 
-                    <a href="../../../../../storage/glusterfs/index.html">
+                    <a href="../../../storage/glusterfs/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2369,7 +2532,7 @@
         <li class="chapter " data-level="4.2.1" data-path="storage/glusterfs/glusterfs_server_quorum.html">
             
                 
-                    <a href="../../../../../storage/glusterfs/glusterfs_server_quorum.html">
+                    <a href="../../../storage/glusterfs/glusterfs_server_quorum.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2394,7 +2557,7 @@
         <li class="chapter " data-level="5" data-path="service/index.html">
             
                 
-                    <a href="../../../../../service/index.html">
+                    <a href="../../../service/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2410,7 +2573,7 @@
         <li class="chapter " data-level="5.1" data-path="service/sendmail/index.html">
             
                 
-                    <a href="../../../../../service/sendmail/index.html">
+                    <a href="../../../service/sendmail/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2426,7 +2589,7 @@
         <li class="chapter " data-level="5.1.1" data-path="service/sendmail/sendmail_mqueue_error.html">
             
                 
-                    <a href="../../../../../service/sendmail/sendmail_mqueue_error.html">
+                    <a href="../../../service/sendmail/sendmail_mqueue_error.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2446,7 +2609,7 @@
         <li class="chapter " data-level="5.2" data-path="service/ssh/index.html">
             
                 
-                    <a href="../../../../../service/ssh/index.html">
+                    <a href="../../../service/ssh/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2462,7 +2625,7 @@
         <li class="chapter " data-level="5.2.1" data-path="service/ssh/ssh_key.html">
             
                 
-                    <a href="../../../../../service/ssh/ssh_key.html">
+                    <a href="../../../service/ssh/ssh_key.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2477,7 +2640,7 @@
         <li class="chapter " data-level="5.2.2" data-path="service/ssh/ssh_port_forwarding.html">
             
                 
-                    <a href="../../../../../service/ssh/ssh_port_forwarding.html">
+                    <a href="../../../service/ssh/ssh_port_forwarding.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2492,7 +2655,7 @@
         <li class="chapter " data-level="5.2.3" data-path="service/ssh/multiplexing.html">
             
                 
-                    <a href="../../../../../service/ssh/multiplexing.html">
+                    <a href="../../../service/ssh/multiplexing.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2507,7 +2670,7 @@
         <li class="chapter " data-level="5.2.4" data-path="service/ssh/sslh_multi_service_in_one_port.html">
             
                 
-                    <a href="../../../../../service/ssh/sslh_multi_service_in_one_port.html">
+                    <a href="../../../service/ssh/sslh_multi_service_in_one_port.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2527,7 +2690,7 @@
         <li class="chapter " data-level="5.3" data-path="service/nginx/index.html">
             
                 
-                    <a href="../../../../../service/nginx/index.html">
+                    <a href="../../../service/nginx/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2543,7 +2706,7 @@
         <li class="chapter " data-level="5.3.1" data-path="service/nginx/install_nginx_in_mac_os_x_with_homebrew.html">
             
                 
-                    <a href="../../../../../service/nginx/install_nginx_in_mac_os_x_with_homebrew.html">
+                    <a href="../../../service/nginx/install_nginx_in_mac_os_x_with_homebrew.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2563,7 +2726,7 @@
         <li class="chapter " data-level="5.4" data-path="service/openresty/index.html">
             
                 
-                    <a href="../../../../../service/openresty/index.html">
+                    <a href="../../../service/openresty/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2579,7 +2742,7 @@
         <li class="chapter " data-level="5.4.1" data-path="service/openresty/server_openresty_install.html">
             
                 
-                    <a href="../../../../../service/openresty/server_openresty_install.html">
+                    <a href="../../../service/openresty/server_openresty_install.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2594,7 +2757,7 @@
         <li class="chapter " data-level="5.4.2" data-path="service/openresty/server_openresty_startup.html">
             
                 
-                    <a href="../../../../../service/openresty/server_openresty_startup.html">
+                    <a href="../../../service/openresty/server_openresty_startup.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2614,7 +2777,7 @@
         <li class="chapter " data-level="5.5" data-path="service/proxy/index.html">
             
                 
-                    <a href="../../../../../service/proxy/index.html">
+                    <a href="../../../service/proxy/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2630,7 +2793,7 @@
         <li class="chapter " data-level="5.5.1" data-path="service/proxy/polipo.html">
             
                 
-                    <a href="../../../../../service/proxy/polipo.html">
+                    <a href="../../../service/proxy/polipo.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2655,7 +2818,7 @@
         <li class="chapter " data-level="6" data-path="security/index.html">
             
                 
-                    <a href="../../../../../security/index.html">
+                    <a href="../../../security/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2671,7 +2834,7 @@
         <li class="chapter " data-level="6.1" data-path="security/vpn/index.html">
             
                 
-                    <a href="../../../../../security/vpn/index.html">
+                    <a href="../../../security/vpn/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2687,7 +2850,7 @@
         <li class="chapter " data-level="6.1.1" data-path="security/vpn/use_openconnect_to_ocserv_in_android.html">
             
                 
-                    <a href="../../../../../security/vpn/use_openconnect_to_ocserv_in_android.html">
+                    <a href="../../../security/vpn/use_openconnect_to_ocserv_in_android.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2702,7 +2865,7 @@
         <li class="chapter " data-level="6.1.2" data-path="security/vpn/openconnect.html">
             
                 
-                    <a href="../../../../../security/vpn/openconnect.html">
+                    <a href="../../../security/vpn/openconnect.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2717,7 +2880,7 @@
         <li class="chapter " data-level="6.1.3" data-path="security/vpn/deploy_ocserv_vpn_server.html">
             
                 
-                    <a href="../../../../../security/vpn/deploy_ocserv_vpn_server.html">
+                    <a href="../../../security/vpn/deploy_ocserv_vpn_server.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2737,7 +2900,7 @@
         <li class="chapter " data-level="6.2" data-path="security/authentication/index.html">
             
                 
-                    <a href="../../../../../security/authentication/index.html">
+                    <a href="../../../security/authentication/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2753,7 +2916,7 @@
         <li class="chapter " data-level="6.2.1" data-path="security/authentication/linux_802.1x.html">
             
                 
-                    <a href="../../../../../security/authentication/linux_802.1x.html">
+                    <a href="../../../security/authentication/linux_802.1x.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2778,7 +2941,7 @@
         <li class="chapter " data-level="7" data-path="virtual/index.html">
             
                 
-                    <a href="../../../../../virtual/index.html">
+                    <a href="../../../virtual/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2794,7 +2957,7 @@
         <li class="chapter " data-level="7.1" data-path="virtual/intel/index.html">
             
                 
-                    <a href="../../../../../virtual/intel/index.html">
+                    <a href="../../../virtual/intel/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2810,7 +2973,7 @@
         <li class="chapter " data-level="7.1.1" data-path="virtual/intel/vt-x/index.html">
             
                 
-                    <a href="../../../../../virtual/intel/vt-x/index.html">
+                    <a href="../../../virtual/intel/vt-x/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2825,7 +2988,7 @@
         <li class="chapter " data-level="7.1.2" data-path="virtual/intel/vt-d/index.html">
             
                 
-                    <a href="../../../../../virtual/intel/vt-d/index.html">
+                    <a href="../../../virtual/intel/vt-d/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2840,7 +3003,7 @@
         <li class="chapter " data-level="7.1.3" data-path="virtual/intel/ept/index.html">
             
                 
-                    <a href="../../../../../virtual/intel/ept/index.html">
+                    <a href="../../../virtual/intel/ept/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2860,7 +3023,7 @@
         <li class="chapter " data-level="7.2" data-path="virtual/kvm/index.html">
             
                 
-                    <a href="../../../../../virtual/kvm/index.html">
+                    <a href="../../../virtual/kvm/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2876,7 +3039,7 @@
         <li class="chapter " data-level="7.2.1" data-path="virtual/kvm/intruduce_kvm.html">
             
                 
-                    <a href="../../../../../virtual/kvm/intruduce_kvm.html">
+                    <a href="../../../virtual/kvm/intruduce_kvm.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2891,7 +3054,7 @@
         <li class="chapter " data-level="7.2.2" data-path="virtual/kvm/virsh.html">
             
                 
-                    <a href="../../../../../virtual/kvm/virsh.html">
+                    <a href="../../../virtual/kvm/virsh.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2906,7 +3069,7 @@
         <li class="chapter " data-level="7.2.3" data-path="virtual/kvm/deployment_and_administration/index.html">
             
                 
-                    <a href="../../../../../virtual/kvm/deployment_and_administration/index.html">
+                    <a href="../../../virtual/kvm/deployment_and_administration/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2929,7 +3092,7 @@
         <li class="chapter " data-level="7.2.3.2" data-path="virtual/kvm/deployment_and_administration/kvm_guest_timing_management.html">
             
                 
-                    <a href="../../../../../virtual/kvm/deployment_and_administration/kvm_guest_timing_management.html">
+                    <a href="../../../virtual/kvm/deployment_and_administration/kvm_guest_timing_management.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2949,7 +3112,7 @@
         <li class="chapter " data-level="7.2.4" data-path="virtual/kvm/performance/index.html">
             
                 
-                    <a href="../../../../../virtual/kvm/performance/index.html">
+                    <a href="../../../virtual/kvm/performance/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2965,7 +3128,7 @@
         <li class="chapter " data-level="7.2.4.1" data-path="virtual/kvm/performance/kvm_performance_tunning.html">
             
                 
-                    <a href="../../../../../virtual/kvm/performance/kvm_performance_tunning.html">
+                    <a href="../../../virtual/kvm/performance/kvm_performance_tunning.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2980,7 +3143,7 @@
         <li class="chapter " data-level="7.2.4.2" data-path="virtual/kvm/performance/best_practices_for_kvm.html">
             
                 
-                    <a href="../../../../../virtual/kvm/performance/best_practices_for_kvm.html">
+                    <a href="../../../virtual/kvm/performance/best_practices_for_kvm.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -2995,7 +3158,7 @@
         <li class="chapter " data-level="7.2.4.3" data-path="virtual/kvm/performance/kvm_performance_limit_for_vcpu.html">
             
                 
-                    <a href="../../../../../virtual/kvm/performance/kvm_performance_limit_for_vcpu.html">
+                    <a href="../../../virtual/kvm/performance/kvm_performance_limit_for_vcpu.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3020,7 +3183,7 @@
         <li class="chapter " data-level="7.3" data-path="virtual/xen/index.html">
             
                 
-                    <a href="../../../../../virtual/xen/index.html">
+                    <a href="../../../virtual/xen/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3036,7 +3199,7 @@
         <li class="chapter " data-level="7.3.1" data-path="virtual/xen/architecture/index.html">
             
                 
-                    <a href="../../../../../virtual/xen/architecture/index.html">
+                    <a href="../../../virtual/xen/architecture/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3052,7 +3215,7 @@
         <li class="chapter " data-level="7.3.1.1" data-path="virtual/xen/architecture/hypervisor.html">
             
                 
-                    <a href="../../../../../virtual/xen/architecture/hypervisor.html">
+                    <a href="../../../virtual/xen/architecture/hypervisor.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3067,7 +3230,7 @@
         <li class="chapter " data-level="7.3.1.2" data-path="virtual/xen/architecture/hypervisor_debug.html">
             
                 
-                    <a href="../../../../../virtual/xen/architecture/hypervisor_debug.html">
+                    <a href="../../../virtual/xen/architecture/hypervisor_debug.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3082,7 +3245,7 @@
         <li class="chapter " data-level="7.3.1.3" data-path="virtual/xen/architecture/xenstore_xenstored.html">
             
                 
-                    <a href="../../../../../virtual/xen/architecture/xenstore_xenstored.html">
+                    <a href="../../../virtual/xen/architecture/xenstore_xenstored.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3097,7 +3260,7 @@
         <li class="chapter " data-level="7.3.1.4" data-path="virtual/xen/architecture/xen_network.html">
             
                 
-                    <a href="../../../../../virtual/xen/architecture/xen_network.html">
+                    <a href="../../../virtual/xen/architecture/xen_network.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3117,7 +3280,7 @@
         <li class="chapter " data-level="7.3.2" data-path="virtual/xen/network/index.html">
             
                 
-                    <a href="../../../../../virtual/xen/network/index.html">
+                    <a href="../../../virtual/xen/network/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3133,7 +3296,7 @@
         <li class="chapter " data-level="7.3.2.1" data-path="virtual/xen/network/xen_multiple_vlans.html">
             
                 
-                    <a href="../../../../../virtual/xen/network/xen_multiple_vlans.html">
+                    <a href="../../../virtual/xen/network/xen_multiple_vlans.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3153,7 +3316,7 @@
         <li class="chapter " data-level="7.3.3" data-path="virtual/xen/storage/index.html">
             
                 
-                    <a href="../../../../../virtual/xen/storage/index.html">
+                    <a href="../../../virtual/xen/storage/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3169,7 +3332,7 @@
         <li class="chapter " data-level="7.3.3.1" data-path="virtual/xen/storage/mount_iso_image_on_xen_guest.html">
             
                 
-                    <a href="../../../../../virtual/xen/storage/mount_iso_image_on_xen_guest.html">
+                    <a href="../../../virtual/xen/storage/mount_iso_image_on_xen_guest.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3194,7 +3357,7 @@
         <li class="chapter " data-level="7.4" data-path="virtual/vmware/index.html">
             
                 
-                    <a href="../../../../../virtual/vmware/index.html">
+                    <a href="../../../virtual/vmware/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3210,7 +3373,7 @@
         <li class="chapter " data-level="7.4.1" data-path="virtual/vmware/timekeeping_in_vmware.html">
             
                 
-                    <a href="../../../../../virtual/vmware/timekeeping_in_vmware.html">
+                    <a href="../../../virtual/vmware/timekeeping_in_vmware.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3230,7 +3393,7 @@
         <li class="chapter " data-level="7.5" data-path="virtual/docker/index.html">
             
                 
-                    <a href="../../../../../virtual/docker/index.html">
+                    <a href="../../../virtual/docker/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3246,7 +3409,7 @@
         <li class="chapter " data-level="7.5.1" data-path="virtual/docker/engine/index.html">
             
                 
-                    <a href="../../../../../virtual/docker/engine/index.html">
+                    <a href="../../../virtual/docker/engine/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3270,7 +3433,7 @@
         <li class="chapter " data-level="7.5.1.1.1" data-path="virtual/docker/engine/install/deploy_docker_in_redhat.html">
             
                 
-                    <a href="../../../../../virtual/docker/engine/install/deploy_docker_in_redhat.html">
+                    <a href="../../../virtual/docker/engine/install/deploy_docker_in_redhat.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3285,7 +3448,7 @@
         <li class="chapter " data-level="7.5.1.1.2" data-path="virtual/docker/engine/install/docker_run_centos.html">
             
                 
-                    <a href="../../../../../virtual/docker/engine/install/docker_run_centos.html">
+                    <a href="../../../virtual/docker/engine/install/docker_run_centos.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3300,7 +3463,7 @@
         <li class="chapter " data-level="7.5.1.1.3" data-path="virtual/docker/engine/install/deploy_docker_in_gentoo.html">
             
                 
-                    <a href="../../../../../virtual/docker/engine/install/deploy_docker_in_gentoo.html">
+                    <a href="../../../virtual/docker/engine/install/deploy_docker_in_gentoo.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3316,7 +3479,7 @@
         <li class="chapter " data-level="7.5.1.1.3.1" data-path="virtual/docker/engine/install/docker_kernel.html">
             
                 
-                    <a href="../../../../../virtual/docker/engine/install/docker_kernel.html">
+                    <a href="../../../virtual/docker/engine/install/docker_kernel.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3336,7 +3499,7 @@
         <li class="chapter " data-level="7.5.1.1.4" data-path="virtual/docker/engine/install/deploy_docker_in_osx.html">
             
                 
-                    <a href="../../../../../virtual/docker/engine/install/deploy_docker_in_osx.html">
+                    <a href="../../../virtual/docker/engine/install/deploy_docker_in_osx.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3366,7 +3529,7 @@
         <li class="chapter " data-level="7.6" data-path="virtual/virtualbox/index.html">
             
                 
-                    <a href="../../../../../virtual/virtualbox/index.html">
+                    <a href="../../../virtual/virtualbox/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3381,7 +3544,7 @@
         <li class="chapter " data-level="7.7" data-path="virtual/vagrant/index.html">
             
                 
-                    <a href="../../../../../virtual/vagrant/index.html">
+                    <a href="../../../virtual/vagrant/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3397,7 +3560,7 @@
         <li class="chapter " data-level="7.7.1" data-path="virtual/vagrant/deploy_develop_env.html">
             
                 
-                    <a href="../../../../../virtual/vagrant/deploy_develop_env.html">
+                    <a href="../../../virtual/vagrant/deploy_develop_env.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3412,7 +3575,7 @@
         <li class="chapter " data-level="7.7.2" data-path="virtual/vagrant/package.html">
             
                 
-                    <a href="../../../../../virtual/vagrant/package.html">
+                    <a href="../../../virtual/vagrant/package.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3427,7 +3590,7 @@
         <li class="chapter " data-level="7.7.3" data-path="virtual/vagrant/box.html">
             
                 
-                    <a href="../../../../../virtual/vagrant/box.html">
+                    <a href="../../../virtual/vagrant/box.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3442,7 +3605,7 @@
         <li class="chapter " data-level="7.7.4" data-path="virtual/vagrant/snapshot.html">
             
                 
-                    <a href="../../../../../virtual/vagrant/snapshot.html">
+                    <a href="../../../virtual/vagrant/snapshot.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3457,7 +3620,7 @@
         <li class="chapter " data-level="7.7.5" data-path="virtual/vagrant/resume_download.html">
             
                 
-                    <a href="../../../../../virtual/vagrant/resume_download.html">
+                    <a href="../../../virtual/vagrant/resume_download.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3472,7 +3635,7 @@
         <li class="chapter " data-level="7.7.6" data-path="virtual/vagrant/vboxsf.html">
             
                 
-                    <a href="../../../../../virtual/vagrant/vboxsf.html">
+                    <a href="../../../virtual/vagrant/vboxsf.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3489,22 +3652,58 @@
             
         </li>
     
-        <li class="chapter " data-level="7.8" data-path="virtual/network/index.html">
+        <li class="chapter " data-level="7.8" data-path="virtual/libvirt/index.html">
             
-            <span><b>7.8.</b> 虚拟网络</span>
+                
+                    <a href="../../../virtual/libvirt/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.8.</b>
+                        
+                        libvirt
+                    </a>
             
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="7.8.1" data-path="virtual/network/xvlan/index.html">
+        <li class="chapter " data-level="7.8.1" data-path="virtual/libvirt/libvirt_nat.html">
             
                 
-                    <a href="../../../../../virtual/network/xvlan/index.html">
+                    <a href="../../../virtual/libvirt/libvirt_nat.html">
                 
                         <i class="fa fa-check"></i>
                         
                             <b>7.8.1.</b>
+                        
+                        NAT网络
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="virtual/network/index.html">
+            
+            <span><b>7.9.</b> 虚拟网络</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.9.1" data-path="virtual/network/xvlan/index.html">
+            
+                
+                    <a href="../../../virtual/network/xvlan/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.9.1.</b>
                         
                         xvlan
                     </a>
@@ -3517,14 +3716,14 @@
             
         </li>
     
-        <li class="chapter " data-level="7.9" data-path="virtual/misc/index.html">
+        <li class="chapter " data-level="7.10" data-path="virtual/misc/index.html">
             
                 
-                    <a href="../../../../../virtual/misc/index.html">
+                    <a href="../../../virtual/misc/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>7.9.</b>
+                            <b>7.10.</b>
                         
                         杂项
                     </a>
@@ -3533,14 +3732,14 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="7.9.1" data-path="virtual/misc/detecting_virtualization.html">
+        <li class="chapter " data-level="7.10.1" data-path="virtual/misc/detecting_virtualization.html">
             
                 
-                    <a href="../../../../../virtual/misc/detecting_virtualization.html">
+                    <a href="../../../virtual/misc/detecting_virtualization.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>7.9.1.</b>
+                            <b>7.10.1.</b>
                         
                         如何检测虚拟或物理主机
                     </a>
@@ -3561,7 +3760,7 @@
         <li class="chapter " data-level="8" data-path="iaas/index.html">
             
                 
-                    <a href="../../../../../iaas/index.html">
+                    <a href="../../../iaas/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3577,7 +3776,7 @@
         <li class="chapter " data-level="8.1" data-path="iaas/openstack/index.html">
             
                 
-                    <a href="../../../../../iaas/openstack/index.html">
+                    <a href="../../../iaas/openstack/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3593,7 +3792,7 @@
         <li class="chapter " data-level="8.1.1" data-path="iaas/openstack/devstack.html">
             
                 
-                    <a href="../../../../../iaas/openstack/devstack.html">
+                    <a href="../../../iaas/openstack/devstack.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3613,7 +3812,7 @@
         <li class="chapter " data-level="8.2" data-path="iaas/ovirt/index.html">
             
                 
-                    <a href="../../../../../iaas/ovirt/index.html">
+                    <a href="../../../iaas/ovirt/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3629,7 +3828,7 @@
         <li class="chapter " data-level="8.2.1" data-path="iaas/ovirt/ovirt_infrastructure.html">
             
                 
-                    <a href="../../../../../iaas/ovirt/ovirt_infrastructure.html">
+                    <a href="../../../iaas/ovirt/ovirt_infrastructure.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3644,7 +3843,7 @@
         <li class="chapter " data-level="8.2.2" data-path="iaas/ovirt/ovirt_storage.html">
             
                 
-                    <a href="../../../../../iaas/ovirt/ovirt_storage.html">
+                    <a href="../../../iaas/ovirt/ovirt_storage.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3659,7 +3858,7 @@
         <li class="chapter " data-level="8.2.3" data-path="iaas/ovirt/deploy_ovirt.html">
             
                 
-                    <a href="../../../../../iaas/ovirt/deploy_ovirt.html">
+                    <a href="../../../iaas/ovirt/deploy_ovirt.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3674,7 +3873,7 @@
         <li class="chapter " data-level="8.2.4" data-path="iaas/ovirt/ovirt_upgrade.html">
             
                 
-                    <a href="../../../../../iaas/ovirt/ovirt_upgrade.html">
+                    <a href="../../../iaas/ovirt/ovirt_upgrade.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3699,7 +3898,7 @@
         <li class="chapter " data-level="9" data-path="monitor/index.html">
             
                 
-                    <a href="../../../../../monitor/index.html">
+                    <a href="../../../monitor/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3742,7 +3941,7 @@
         <li class="chapter " data-level="9.2" data-path="monitor/iaas/index.html">
             
                 
-                    <a href="../../../../../monitor/iaas/index.html">
+                    <a href="../../../monitor/iaas/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3782,7 +3981,7 @@
         <li class="chapter " data-level="10" data-path="performance/index.html">
             
                 
-                    <a href="../../../../../performance/index.html">
+                    <a href="../../../performance/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3798,7 +3997,7 @@
         <li class="chapter " data-level="10.1" data-path="performance/web/index.html">
             
                 
-                    <a href="../../../../../performance/web/index.html">
+                    <a href="../../../performance/web/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3814,7 +4013,7 @@
         <li class="chapter " data-level="10.1.1" data-path="performance/web/progressive_jpeg.html">
             
                 
-                    <a href="../../../../../performance/web/progressive_jpeg.html">
+                    <a href="../../../performance/web/progressive_jpeg.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3834,7 +4033,7 @@
         <li class="chapter " data-level="10.2" data-path="performance/network/index.html">
             
                 
-                    <a href="../../../../../performance/network/index.html">
+                    <a href="../../../performance/network/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3850,7 +4049,7 @@
         <li class="chapter " data-level="10.2.1" data-path="performance/network/tcpreplay.html">
             
                 
-                    <a href="../../../../../performance/network/tcpreplay.html">
+                    <a href="../../../performance/network/tcpreplay.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3872,7 +4071,7 @@
         <li class="chapter " data-level="10.2.3" data-path="performance/network/netperf.html">
             
                 
-                    <a href="../../../../../performance/network/netperf.html">
+                    <a href="../../../performance/network/netperf.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3897,7 +4096,7 @@
         <li class="chapter " data-level="11" data-path="develop/index.html">
             
                 
-                    <a href="../../../../../develop/index.html">
+                    <a href="../../../develop/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3927,7 +4126,7 @@
         <li class="chapter " data-level="11.3" data-path="develop/android/index.html">
             
                 
-                    <a href="../../../../../develop/android/index.html">
+                    <a href="../../../develop/android/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3943,7 +4142,7 @@
         <li class="chapter " data-level="11.3.1" data-path="develop/android/startup/index.html">
             
                 
-                    <a href="../../../../../develop/android/startup/index.html">
+                    <a href="../../../develop/android/startup/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3959,7 +4158,7 @@
         <li class="chapter " data-level="11.3.1.1" data-path="develop/android/startup/nexus_5_update.html">
             
                 
-                    <a href="../../../../../develop/android/startup/nexus_5_update.html">
+                    <a href="../../../develop/android/startup/nexus_5_update.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3974,7 +4173,7 @@
         <li class="chapter " data-level="11.3.1.2" data-path="develop/android/startup/root_android_on_nexus_5.html">
             
                 
-                    <a href="../../../../../develop/android/startup/root_android_on_nexus_5.html">
+                    <a href="../../../develop/android/startup/root_android_on_nexus_5.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -3989,7 +4188,7 @@
         <li class="chapter " data-level="11.3.1.3" data-path="develop/android/startup/transfer_file_to_android.html">
             
                 
-                    <a href="../../../../../develop/android/startup/transfer_file_to_android.html">
+                    <a href="../../../develop/android/startup/transfer_file_to_android.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -4004,7 +4203,7 @@
         <li class="chapter " data-level="11.3.1.4" data-path="develop/android/startup/android_file_manage_and_install_apk.html">
             
                 
-                    <a href="../../../../../develop/android/startup/android_file_manage_and_install_apk.html">
+                    <a href="../../../develop/android/startup/android_file_manage_and_install_apk.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -4019,7 +4218,7 @@
         <li class="chapter " data-level="11.3.1.5" data-path="develop/android/startup/take_screenshot_in_android.html">
             
                 
-                    <a href="../../../../../develop/android/startup/take_screenshot_in_android.html">
+                    <a href="../../../develop/android/startup/take_screenshot_in_android.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -4034,7 +4233,7 @@
         <li class="chapter " data-level="11.3.1.6" data-path="develop/android/startup/buy_in_google_play.html">
             
                 
-                    <a href="../../../../../develop/android/startup/buy_in_google_play.html">
+                    <a href="../../../develop/android/startup/buy_in_google_play.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -4049,7 +4248,7 @@
         <li class="chapter " data-level="11.3.1.7" data-path="develop/android/startup/android_develop_environment.html">
             
                 
-                    <a href="../../../../../develop/android/startup/android_develop_environment.html">
+                    <a href="../../../develop/android/startup/android_develop_environment.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -4064,7 +4263,7 @@
         <li class="chapter " data-level="11.3.1.8" data-path="develop/android/startup/install_idea_on_gentoo.html">
             
                 
-                    <a href="../../../../../develop/android/startup/install_idea_on_gentoo.html">
+                    <a href="../../../develop/android/startup/install_idea_on_gentoo.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -4084,7 +4283,7 @@
         <li class="chapter " data-level="11.3.2" data-path="develop/android/linux/index.html">
             
                 
-                    <a href="../../../../../develop/android/linux/index.html">
+                    <a href="../../../develop/android/linux/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -4100,7 +4299,7 @@
         <li class="chapter " data-level="11.3.2.1" data-path="develop/android/linux/deploy_linux_on_android.html">
             
                 
-                    <a href="../../../../../develop/android/linux/deploy_linux_on_android.html">
+                    <a href="../../../develop/android/linux/deploy_linux_on_android.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -4115,7 +4314,7 @@
         <li class="chapter " data-level="11.3.2.2" data-path="develop/android/linux/linux_develop_environment_on_android.html">
             
                 
-                    <a href="../../../../../develop/android/linux/linux_develop_environment_on_android.html">
+                    <a href="../../../develop/android/linux/linux_develop_environment_on_android.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -4135,7 +4334,7 @@
         <li class="chapter " data-level="11.3.3" data-path="develop/android/bluetooth/index.html">
             
                 
-                    <a href="../../../../../develop/android/bluetooth/index.html">
+                    <a href="../../../develop/android/bluetooth/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -4151,7 +4350,7 @@
         <li class="chapter " data-level="11.3.3.1" data-path="develop/android/bluetooth/share_wifi_or_mobile_via_bluetooth.html">
             
                 
-                    <a href="../../../../../develop/android/bluetooth/share_wifi_or_mobile_via_bluetooth.html">
+                    <a href="../../../develop/android/bluetooth/share_wifi_or_mobile_via_bluetooth.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -4171,7 +4370,7 @@
         <li class="chapter " data-level="11.3.4" data-path="develop/android/nfc/index.html">
             
                 
-                    <a href="../../../../../develop/android/nfc/index.html">
+                    <a href="../../../develop/android/nfc/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -4187,7 +4386,7 @@
         <li class="chapter " data-level="11.3.4.1" data-path="develop/android/nfc/introduce.html">
             
                 
-                    <a href="../../../../../develop/android/nfc/introduce.html">
+                    <a href="../../../develop/android/nfc/introduce.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -4202,7 +4401,7 @@
         <li class="chapter " data-level="11.3.4.2" data-path="develop/android/nfc/use_nfc_in_life.html">
             
                 
-                    <a href="../../../../../develop/android/nfc/use_nfc_in_life.html">
+                    <a href="../../../develop/android/nfc/use_nfc_in_life.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -4217,7 +4416,7 @@
         <li class="chapter " data-level="11.3.4.3" data-path="develop/android/nfc/nfc_basics.html">
             
                 
-                    <a href="../../../../../develop/android/nfc/nfc_basics.html">
+                    <a href="../../../develop/android/nfc/nfc_basics.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -4239,14 +4438,50 @@
             
         </li>
     
-        <li class="chapter " data-level="11.4" data-path="develop/python/index.html">
+        <li class="chapter " data-level="11.4" data-path="develop/sailfish/index.html">
             
                 
-                    <a href="../../../../../develop/python/index.html">
+                    <a href="../../../develop/sailfish/index.html">
                 
                         <i class="fa fa-check"></i>
                         
                             <b>11.4.</b>
+                        
+                        Sailfish
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.4.1" data-path="develop/sailfish/sfdroid.html">
+            
+                
+                    <a href="../../../develop/sailfish/sfdroid.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.4.1.</b>
+                        
+                        sfdroid:Sailfish/Android合体
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11.5" data-path="develop/python/index.html">
+            
+                
+                    <a href="../../../develop/python/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.5.</b>
                         
                         Python
                     </a>
@@ -4255,14 +4490,14 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="11.4.1" data-path="develop/python/startup/index.html">
+        <li class="chapter " data-level="11.5.1" data-path="develop/python/startup/index.html">
             
                 
-                    <a href="../../../../../develop/python/startup/index.html">
+                    <a href="../../../develop/python/startup/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.4.1.</b>
+                            <b>11.5.1.</b>
                         
                         Python快速起步
                     </a>
@@ -4271,14 +4506,14 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="11.4.1.1" data-path="develop/python/startup/pip.html">
+        <li class="chapter " data-level="11.5.1.1" data-path="develop/python/startup/pip.html">
             
                 
-                    <a href="../../../../../develop/python/startup/pip.html">
+                    <a href="../../../develop/python/startup/pip.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.4.1.1.</b>
+                            <b>11.5.1.1.</b>
                         
                         pip包管理
                     </a>
@@ -4286,14 +4521,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.4.1.2" data-path="develop/python/startup/python_style.html">
+        <li class="chapter " data-level="11.5.1.2" data-path="develop/python/startup/python_style.html">
             
                 
-                    <a href="../../../../../develop/python/startup/python_style.html">
+                    <a href="../../../develop/python/startup/python_style.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.4.1.2.</b>
+                            <b>11.5.1.2.</b>
                         
                         python编程风格
                     </a>
@@ -4306,14 +4541,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.4.2" data-path="develop/python/flask/index.html">
+        <li class="chapter " data-level="11.5.2" data-path="develop/python/flask/index.html">
             
                 
-                    <a href="../../../../../develop/python/flask/index.html">
+                    <a href="../../../develop/python/flask/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.4.2.</b>
+                            <b>11.5.2.</b>
                         
                         Flask开发Web
                     </a>
@@ -4322,14 +4557,14 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="11.4.2.1" data-path="develop/python/flask/install.html">
+        <li class="chapter " data-level="11.5.2.1" data-path="develop/python/flask/install.html">
             
                 
-                    <a href="../../../../../develop/python/flask/install.html">
+                    <a href="../../../develop/python/flask/install.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.4.2.1.</b>
+                            <b>11.5.2.1.</b>
                         
                         安装Flask开发环境
                     </a>
@@ -4347,14 +4582,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.5" data-path="develop/ruby/index.html">
+        <li class="chapter " data-level="11.6" data-path="develop/ruby/index.html">
             
                 
-                    <a href="../../../../../develop/ruby/index.html">
+                    <a href="../../../develop/ruby/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.5.</b>
+                            <b>11.6.</b>
                         
                         Ruby
                     </a>
@@ -4363,22 +4598,22 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="11.5.1" data-path="develop/ruby/startup/READMD.html">
+        <li class="chapter " data-level="11.6.1" data-path="develop/ruby/startup/READMD.html">
             
-            <span><b>11.5.1.</b> Ruby快速起步</span>
+            <span><b>11.6.1.</b> Ruby快速起步</span>
             
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="11.5.1.1" data-path="develop/ruby/startup/rubygems_install_and_usage.html">
+        <li class="chapter " data-level="11.6.1.1" data-path="develop/ruby/startup/rubygems_install_and_usage.html">
             
                 
-                    <a href="../../../../../develop/ruby/startup/rubygems_install_and_usage.html">
+                    <a href="../../../develop/ruby/startup/rubygems_install_and_usage.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.5.1.1.</b>
+                            <b>11.6.1.1.</b>
                         
                         RubyGems安装和使用
                     </a>
@@ -4396,14 +4631,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.6" data-path="develop/nodejs/index.html">
+        <li class="chapter " data-level="11.7" data-path="develop/nodejs/index.html">
             
                 
-                    <a href="../../../../../develop/nodejs/index.html">
+                    <a href="../../../develop/nodejs/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.6.</b>
+                            <b>11.7.</b>
                         
                         Node.js
                     </a>
@@ -4412,14 +4647,14 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="11.6.1" data-path="develop/nodejs/startup/index.html">
+        <li class="chapter " data-level="11.7.1" data-path="develop/nodejs/startup/index.html">
             
                 
-                    <a href="../../../../../develop/nodejs/startup/index.html">
+                    <a href="../../../develop/nodejs/startup/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.6.1.</b>
+                            <b>11.7.1.</b>
                         
                         Node.js快速起步
                     </a>
@@ -4428,14 +4663,14 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="11.6.1.1" data-path="develop/nodejs/startup/nodejs_develop_environment.html">
+        <li class="chapter " data-level="11.7.1.1" data-path="develop/nodejs/startup/nodejs_develop_environment.html">
             
                 
-                    <a href="../../../../../develop/nodejs/startup/nodejs_develop_environment.html">
+                    <a href="../../../develop/nodejs/startup/nodejs_develop_environment.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.6.1.1.</b>
+                            <b>11.7.1.1.</b>
                         
                         Node.js开发环境准备
                     </a>
@@ -4443,14 +4678,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.6.1.2" data-path="develop/nodejs/startup/uinstall_nodejs_in_os_x.html">
+        <li class="chapter " data-level="11.7.1.2" data-path="develop/nodejs/startup/uinstall_nodejs_in_os_x.html">
             
                 
-                    <a href="../../../../../develop/nodejs/startup/uinstall_nodejs_in_os_x.html">
+                    <a href="../../../develop/nodejs/startup/uinstall_nodejs_in_os_x.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.6.1.2.</b>
+                            <b>11.7.1.2.</b>
                         
                         在Mac OS X下卸载Node.js
                     </a>
@@ -4463,14 +4698,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.6.2" data-path="develop/nodejs/npm/index.html">
+        <li class="chapter " data-level="11.7.2" data-path="develop/nodejs/npm/index.html">
             
                 
-                    <a href="../../../../../develop/nodejs/npm/index.html">
+                    <a href="../../../develop/nodejs/npm/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.6.2.</b>
+                            <b>11.7.2.</b>
                         
                         npm包管理
                     </a>
@@ -4479,14 +4714,14 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="11.6.2.1" data-path="develop/nodejs/npm/npm_tips.html">
+        <li class="chapter " data-level="11.7.2.1" data-path="develop/nodejs/npm/npm_tips.html">
             
                 
-                    <a href="../../../../../develop/nodejs/npm/npm_tips.html">
+                    <a href="../../../develop/nodejs/npm/npm_tips.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.6.2.1.</b>
+                            <b>11.7.2.1.</b>
                         
                         npm使用tips
                     </a>
@@ -4494,14 +4729,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.6.2.2" data-path="develop/nodejs/npm/svg2png.html">
+        <li class="chapter " data-level="11.7.2.2" data-path="develop/nodejs/npm/svg2png.html">
             
                 
-                    <a href="../../../../../develop/nodejs/npm/svg2png.html">
+                    <a href="../../../develop/nodejs/npm/svg2png.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.6.2.2.</b>
+                            <b>11.7.2.2.</b>
                         
                         svg2png
                     </a>
@@ -4519,14 +4754,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.7" data-path="develop/mac/index.html">
+        <li class="chapter " data-level="11.8" data-path="develop/mac/index.html">
             
                 
-                    <a href="../../../../../develop/mac/index.html">
+                    <a href="../../../develop/mac/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.7.</b>
+                            <b>11.8.</b>
                         
                         Mac
                     </a>
@@ -4535,14 +4770,14 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="11.7.1" data-path="develop/mac/chinese_input.html">
+        <li class="chapter " data-level="11.8.1" data-path="develop/mac/chinese_input.html">
             
                 
-                    <a href="../../../../../develop/mac/chinese_input.html">
+                    <a href="../../../develop/mac/chinese_input.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.7.1.</b>
+                            <b>11.8.1.</b>
                         
                         中文输入法
                     </a>
@@ -4550,14 +4785,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.7.2" data-path="develop/mac/textmate2_tips.html">
+        <li class="chapter " data-level="11.8.2" data-path="develop/mac/textmate2_tips.html">
             
                 
-                    <a href="../../../../../develop/mac/textmate2_tips.html">
+                    <a href="../../../develop/mac/textmate2_tips.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.7.2.</b>
+                            <b>11.8.2.</b>
                         
                         TextMate 2使用Tips
                     </a>
@@ -4565,14 +4800,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.7.3" data-path="develop/mac/multiple_versions_java_in_os_x.html">
+        <li class="chapter " data-level="11.8.3" data-path="develop/mac/multiple_versions_java_in_os_x.html">
             
                 
-                    <a href="../../../../../develop/mac/multiple_versions_java_in_os_x.html">
+                    <a href="../../../develop/mac/multiple_versions_java_in_os_x.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.7.3.</b>
+                            <b>11.8.3.</b>
                         
                         在Mac OS X上安装Java多个版本
                     </a>
@@ -4580,14 +4815,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.7.4" data-path="develop/mac/mac_bluetooth_keyboard_for_mobile_device.html">
+        <li class="chapter " data-level="11.8.4" data-path="develop/mac/mac_bluetooth_keyboard_for_mobile_device.html">
             
                 
-                    <a href="../../../../../develop/mac/mac_bluetooth_keyboard_for_mobile_device.html">
+                    <a href="../../../develop/mac/mac_bluetooth_keyboard_for_mobile_device.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.7.4.</b>
+                            <b>11.8.4.</b>
                         
                         使用MacBook键盘在移动设备输入
                     </a>
@@ -4595,14 +4830,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.7.5" data-path="develop/mac/mac_network.html">
+        <li class="chapter " data-level="11.8.5" data-path="develop/mac/mac_network.html">
             
                 
-                    <a href="../../../../../develop/mac/mac_network.html">
+                    <a href="../../../develop/mac/mac_network.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.7.5.</b>
+                            <b>11.8.5.</b>
                         
                         Mac网络
                     </a>
@@ -4610,14 +4845,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.7.6" data-path="develop/mac/migrate_open_tabs_from_safari.html">
+        <li class="chapter " data-level="11.8.6" data-path="develop/mac/migrate_open_tabs_from_safari.html">
             
                 
-                    <a href="../../../../../develop/mac/migrate_open_tabs_from_safari.html">
+                    <a href="../../../develop/mac/migrate_open_tabs_from_safari.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.7.6.</b>
+                            <b>11.8.6.</b>
                         
                         从safari中导出打开的tab
                     </a>
@@ -4625,14 +4860,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.7.7" data-path="develop/mac/bird_process.html">
+        <li class="chapter " data-level="11.8.7" data-path="develop/mac/bird_process.html">
             
                 
-                    <a href="../../../../../develop/mac/bird_process.html">
+                    <a href="../../../develop/mac/bird_process.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.7.7.</b>
+                            <b>11.8.7.</b>
                         
                         bird进程
                     </a>
@@ -4640,14 +4875,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.7.8" data-path="develop/mac/dual_boot_linux_on_mac.html">
+        <li class="chapter " data-level="11.8.8" data-path="develop/mac/dual_boot_linux_on_mac.html">
             
                 
-                    <a href="../../../../../develop/mac/dual_boot_linux_on_mac.html">
+                    <a href="../../../develop/mac/dual_boot_linux_on_mac.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.7.8.</b>
+                            <b>11.8.8.</b>
                         
                         在Mac上双启动方式安装Linux
                     </a>
@@ -4655,14 +4890,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.7.9" data-path="develop/mac/create_os_x_el_capitan_boot_install_drive.html">
+        <li class="chapter " data-level="11.8.9" data-path="develop/mac/create_os_x_el_capitan_boot_install_drive.html">
             
                 
-                    <a href="../../../../../develop/mac/create_os_x_el_capitan_boot_install_drive.html">
+                    <a href="../../../develop/mac/create_os_x_el_capitan_boot_install_drive.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.7.9.</b>
+                            <b>11.8.9.</b>
                         
                         创建OS X EICapitan启动啊装U盘
                     </a>
@@ -4670,14 +4905,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.7.10" data-path="develop/mac/refind.html">
+        <li class="chapter " data-level="11.8.10" data-path="develop/mac/refind.html">
             
                 
-                    <a href="../../../../../develop/mac/refind.html">
+                    <a href="../../../develop/mac/refind.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.7.10.</b>
+                            <b>11.8.10.</b>
                         
                         rEFInd工具详解
                     </a>
@@ -4690,14 +4925,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.8" data-path="develop/shell/index.html">
+        <li class="chapter " data-level="11.9" data-path="develop/shell/index.html">
             
                 
-                    <a href="../../../../../develop/shell/index.html">
+                    <a href="../../../develop/shell/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.8.</b>
+                            <b>11.9.</b>
                         
                         shell
                     </a>
@@ -4706,14 +4941,14 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="11.8.1" data-path="develop/shell/bash/index.html">
+        <li class="chapter " data-level="11.9.1" data-path="develop/shell/bash/index.html">
             
                 
-                    <a href="../../../../../develop/shell/bash/index.html">
+                    <a href="../../../develop/shell/bash/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.8.1.</b>
+                            <b>11.9.1.</b>
                         
                         bash
                     </a>
@@ -4722,14 +4957,14 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="11.8.1.1" data-path="develop/shell/bash/special_shell_variable.html">
+        <li class="chapter " data-level="11.9.1.1" data-path="develop/shell/bash/special_shell_variable.html">
             
                 
-                    <a href="../../../../../develop/shell/bash/special_shell_variable.html">
+                    <a href="../../../develop/shell/bash/special_shell_variable.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.8.1.1.</b>
+                            <b>11.9.1.1.</b>
                         
                         shell的特殊变量
                     </a>
@@ -4737,21 +4972,21 @@
             
         </li>
     
-        <li class="chapter " data-level="11.8.1.2" data-path="develop/shell/bash/here_document.html">
+        <li class="chapter " data-level="11.9.1.2" data-path="develop/shell/bash/here_document.html">
             
-            <span><b>11.8.1.2.</b> here document用法(cat &lt;&lt; EOF)</span>
+            <span><b>11.9.1.2.</b> here document用法(cat &lt;&lt; EOF)</span>
             
             
         </li>
     
-        <li class="chapter " data-level="11.8.1.3" data-path="develop/shell/bash/if_command_result_then_do.html">
+        <li class="chapter " data-level="11.9.1.3" data-path="develop/shell/bash/if_command_result_then_do.html">
             
                 
-                    <a href="../../../../../develop/shell/bash/if_command_result_then_do.html">
+                    <a href="../../../develop/shell/bash/if_command_result_then_do.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.8.1.3.</b>
+                            <b>11.9.1.3.</b>
                         
                         根据命令返回结果做if判断
                     </a>
@@ -4759,14 +4994,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.8.1.4" data-path="develop/shell/bash/append_to_file_as_sudo.html">
+        <li class="chapter " data-level="11.9.1.4" data-path="develop/shell/bash/append_to_file_as_sudo.html">
             
                 
-                    <a href="../../../../../develop/shell/bash/append_to_file_as_sudo.html">
+                    <a href="../../../develop/shell/bash/append_to_file_as_sudo.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.8.1.4.</b>
+                            <b>11.9.1.4.</b>
                         
                         使用sudo在文件中添加内容
                     </a>
@@ -4774,14 +5009,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.8.1.5" data-path="develop/shell/bash/env.html">
+        <li class="chapter " data-level="11.9.1.5" data-path="develop/shell/bash/env.html">
             
                 
-                    <a href="../../../../../develop/shell/bash/env.html">
+                    <a href="../../../develop/shell/bash/env.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.8.1.5.</b>
+                            <b>11.9.1.5.</b>
                         
                         shell中的环境变量
                     </a>
@@ -4789,14 +5024,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.8.1.6" data-path="develop/shell/bash/generate_random_number_and_string.html">
+        <li class="chapter " data-level="11.9.1.6" data-path="develop/shell/bash/generate_random_number_and_string.html">
             
                 
-                    <a href="../../../../../develop/shell/bash/generate_random_number_and_string.html">
+                    <a href="../../../develop/shell/bash/generate_random_number_and_string.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.8.1.6.</b>
+                            <b>11.9.1.6.</b>
                         
                         生成随机数和随机字符串
                     </a>
@@ -4809,14 +5044,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.8.2" data-path="develop/shell/sed_awk/index.html">
+        <li class="chapter " data-level="11.9.2" data-path="develop/shell/sed_awk/index.html">
             
                 
-                    <a href="../../../../../develop/shell/sed_awk/index.html">
+                    <a href="../../../develop/shell/sed_awk/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.8.2.</b>
+                            <b>11.9.2.</b>
                         
                         sed和awk
                     </a>
@@ -4825,14 +5060,14 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="11.8.2.1" data-path="develop/shell/sed_awk/awk_shell_var.html">
+        <li class="chapter " data-level="11.9.2.1" data-path="develop/shell/sed_awk/awk_shell_var.html">
             
                 
-                    <a href="../../../../../develop/shell/sed_awk/awk_shell_var.html">
+                    <a href="../../../develop/shell/sed_awk/awk_shell_var.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.8.2.1.</b>
+                            <b>11.9.2.1.</b>
                         
                         awk和shell之间的变量传递
                     </a>
@@ -4840,14 +5075,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.8.2.2" data-path="develop/shell/sed_awk/awk_search_string.html">
+        <li class="chapter " data-level="11.9.2.2" data-path="develop/shell/sed_awk/awk_search_string.html">
             
                 
-                    <a href="../../../../../develop/shell/sed_awk/awk_search_string.html">
+                    <a href="../../../develop/shell/sed_awk/awk_search_string.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.8.2.2.</b>
+                            <b>11.9.2.2.</b>
                         
                         awk处理字符串搜索
                     </a>
@@ -4855,14 +5090,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.8.2.3" data-path="develop/shell/sed_awk/sed_examples.html">
+        <li class="chapter " data-level="11.9.2.3" data-path="develop/shell/sed_awk/sed_examples.html">
             
                 
-                    <a href="../../../../../develop/shell/sed_awk/sed_examples.html">
+                    <a href="../../../develop/shell/sed_awk/sed_examples.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.8.2.3.</b>
+                            <b>11.9.2.3.</b>
                         
                         sed举例
                     </a>
@@ -4875,14 +5110,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.8.3" data-path="develop/shell/utilities/index.html">
+        <li class="chapter " data-level="11.9.3" data-path="develop/shell/utilities/index.html">
             
                 
-                    <a href="../../../../../develop/shell/utilities/index.html">
+                    <a href="../../../develop/shell/utilities/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.8.3.</b>
+                            <b>11.9.3.</b>
                         
                         实用工具
                     </a>
@@ -4891,14 +5126,14 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="11.8.3.1" data-path="develop/shell/utilities/run_script_as_daemon.html">
+        <li class="chapter " data-level="11.9.3.1" data-path="develop/shell/utilities/run_script_as_daemon.html">
             
                 
-                    <a href="../../../../../develop/shell/utilities/run_script_as_daemon.html">
+                    <a href="../../../develop/shell/utilities/run_script_as_daemon.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.8.3.1.</b>
+                            <b>11.9.3.1.</b>
                         
                         脚本作为daemon运行
                     </a>
@@ -4906,14 +5141,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.8.3.2" data-path="develop/shell/utilities/cut_examples.html">
+        <li class="chapter " data-level="11.9.3.2" data-path="develop/shell/utilities/cut_examples.html">
             
                 
-                    <a href="../../../../../develop/shell/utilities/cut_examples.html">
+                    <a href="../../../develop/shell/utilities/cut_examples.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.8.3.2.</b>
+                            <b>11.9.3.2.</b>
                         
                         cut使用举例
                     </a>
@@ -4921,14 +5156,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.8.3.3" data-path="develop/shell/utilities/produce_cpu_load.html">
+        <li class="chapter " data-level="11.9.3.3" data-path="develop/shell/utilities/produce_cpu_load.html">
             
                 
-                    <a href="../../../../../develop/shell/utilities/produce_cpu_load.html">
+                    <a href="../../../develop/shell/utilities/produce_cpu_load.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.8.3.3.</b>
+                            <b>11.9.3.3.</b>
                         
                         对cpu施加负载
                     </a>
@@ -4946,14 +5181,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.9" data-path="develop/vim/index.html">
+        <li class="chapter " data-level="11.10" data-path="develop/vim/index.html">
             
                 
-                    <a href="../../../../../develop/vim/index.html">
+                    <a href="../../../develop/vim/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.9.</b>
+                            <b>11.10.</b>
                         
                         vim
                     </a>
@@ -4962,14 +5197,14 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="11.9.1" data-path="develop/vim/vim_with_ctags.html">
+        <li class="chapter " data-level="11.10.1" data-path="develop/vim/vim_with_ctags.html">
             
                 
-                    <a href="../../../../../develop/vim/vim_with_ctags.html">
+                    <a href="../../../develop/vim/vim_with_ctags.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.9.1.</b>
+                            <b>11.10.1.</b>
                         
                         vim结合ctags作为开发平台
                     </a>
@@ -4977,14 +5212,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.9.2" data-path="develop/vim/vim_python_ide.html">
+        <li class="chapter " data-level="11.10.2" data-path="develop/vim/vim_python_ide.html">
             
                 
-                    <a href="../../../../../develop/vim/vim_python_ide.html">
+                    <a href="../../../develop/vim/vim_python_ide.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.9.2.</b>
+                            <b>11.10.2.</b>
                         
                         将Vim打造成Python开发平台
                     </a>
@@ -4992,14 +5227,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.9.3" data-path="develop/vim/vim_tips.html">
+        <li class="chapter " data-level="11.10.3" data-path="develop/vim/vim_tips.html">
             
                 
-                    <a href="../../../../../develop/vim/vim_tips.html">
+                    <a href="../../../develop/vim/vim_tips.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.9.3.</b>
+                            <b>11.10.3.</b>
                         
                         vim tips
                     </a>
@@ -5012,14 +5247,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.10" data-path="develop/doc/index.html">
+        <li class="chapter " data-level="11.11" data-path="develop/doc/index.html">
             
                 
-                    <a href="../../../../../develop/doc/index.html">
+                    <a href="../../../develop/doc/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.10.</b>
+                            <b>11.11.</b>
                         
                         文档
                     </a>
@@ -5028,14 +5263,14 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="11.10.1" data-path="develop/doc/gitbook/index.html">
+        <li class="chapter " data-level="11.11.1" data-path="develop/doc/gitbook/index.html">
             
                 
-                    <a href="../../../../../develop/doc/gitbook/index.html">
+                    <a href="../../../develop/doc/gitbook/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.10.1.</b>
+                            <b>11.11.1.</b>
                         
                         GitBook
                     </a>
@@ -5044,14 +5279,14 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="11.10.1.1" data-path="develop/doc/gitbook/using_gitbook_write_book.html">
+        <li class="chapter " data-level="11.11.1.1" data-path="develop/doc/gitbook/using_gitbook_write_book.html">
             
                 
-                    <a href="../../../../../develop/doc/gitbook/using_gitbook_write_book.html">
+                    <a href="../../../develop/doc/gitbook/using_gitbook_write_book.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.10.1.1.</b>
+                            <b>11.11.1.1.</b>
                         
                         使用GitBook撰写书籍
                     </a>
@@ -5059,14 +5294,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.10.1.2" data-path="develop/doc/gitbook/run_multi_gitbook_in_one_host.html">
+        <li class="chapter " data-level="11.11.1.2" data-path="develop/doc/gitbook/run_multi_gitbook_in_one_host.html">
             
                 
-                    <a href="../../../../../develop/doc/gitbook/run_multi_gitbook_in_one_host.html">
+                    <a href="../../../develop/doc/gitbook/run_multi_gitbook_in_one_host.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.10.1.2.</b>
+                            <b>11.11.1.2.</b>
                         
                         如何在一台主机同时运行多个GitBook
                     </a>
@@ -5074,14 +5309,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.10.1.3" data-path="develop/doc/gitbook/gitbook_discussions.html">
+        <li class="chapter " data-level="11.11.1.3" data-path="develop/doc/gitbook/gitbook_discussions.html">
             
                 
-                    <a href="../../../../../develop/doc/gitbook/gitbook_discussions.html">
+                    <a href="../../../develop/doc/gitbook/gitbook_discussions.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.10.1.3.</b>
+                            <b>11.11.1.3.</b>
                         
                         GitBook评论插件
                     </a>
@@ -5089,14 +5324,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.10.1.4" data-path="develop/doc/gitbook/gitbook_toggle_chapters.html">
+        <li class="chapter " data-level="11.11.1.4" data-path="develop/doc/gitbook/gitbook_toggle_chapters.html">
             
                 
-                    <a href="../../../../../develop/doc/gitbook/gitbook_toggle_chapters.html">
+                    <a href="../../../develop/doc/gitbook/gitbook_toggle_chapters.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.10.1.4.</b>
+                            <b>11.11.1.4.</b>
                         
                         GitBook单章节展开插件
                     </a>
@@ -5104,14 +5339,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.10.1.5" data-path="develop/doc/gitbook/gitbook_codeblock_filename.html">
+        <li class="chapter " data-level="11.11.1.5" data-path="develop/doc/gitbook/gitbook_codeblock_filename.html">
             
                 
-                    <a href="../../../../../develop/doc/gitbook/gitbook_codeblock_filename.html">
+                    <a href="../../../develop/doc/gitbook/gitbook_codeblock_filename.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.10.1.5.</b>
+                            <b>11.11.1.5.</b>
                         
                         GitBook代码段添加文件名
                     </a>
@@ -5119,14 +5354,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.10.1.6" data-path="develop/doc/gitbook/gitbook_multi_language.html">
+        <li class="chapter " data-level="11.11.1.6" data-path="develop/doc/gitbook/gitbook_multi_language.html">
             
                 
-                    <a href="../../../../../develop/doc/gitbook/gitbook_multi_language.html">
+                    <a href="../../../develop/doc/gitbook/gitbook_multi_language.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.10.1.6.</b>
+                            <b>11.11.1.6.</b>
                         
                         GitBook多国语言
                     </a>
@@ -5134,14 +5369,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.10.1.7" data-path="develop/doc/gitbook/gitbook_video.html">
+        <li class="chapter " data-level="11.11.1.7" data-path="develop/doc/gitbook/gitbook_video.html">
             
                 
-                    <a href="../../../../../develop/doc/gitbook/gitbook_video.html">
+                    <a href="../../../develop/doc/gitbook/gitbook_video.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.10.1.7.</b>
+                            <b>11.11.1.7.</b>
                         
                         GitBook嵌入视频
                     </a>
@@ -5154,14 +5389,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.10.2" data-path="develop/doc/hexo/index.html">
+        <li class="chapter " data-level="11.11.2" data-path="develop/doc/hexo/index.html">
             
                 
-                    <a href="../../../../../develop/doc/hexo/index.html">
+                    <a href="../../../develop/doc/hexo/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.10.2.</b>
+                            <b>11.11.2.</b>
                         
                         Hexo
                     </a>
@@ -5170,14 +5405,14 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="11.10.2.1" data-path="develop/doc/hexo/write_blog_by_hexo.html">
+        <li class="chapter " data-level="11.11.2.1" data-path="develop/doc/hexo/write_blog_by_hexo.html">
             
                 
-                    <a href="../../../../../develop/doc/hexo/write_blog_by_hexo.html">
+                    <a href="../../../develop/doc/hexo/write_blog_by_hexo.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.10.2.1.</b>
+                            <b>11.11.2.1.</b>
                         
                         使用hexo撰写blog
                     </a>
@@ -5185,14 +5420,14 @@
             
         </li>
     
-        <li class="chapter " data-level="11.10.2.2" data-path="develop/doc/hexo/hexo_theme_tranquilpeak.html">
+        <li class="chapter " data-level="11.11.2.2" data-path="develop/doc/hexo/hexo_theme_tranquilpeak.html">
             
                 
-                    <a href="../../../../../develop/doc/hexo/hexo_theme_tranquilpeak.html">
+                    <a href="../../../develop/doc/hexo/hexo_theme_tranquilpeak.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>11.10.2.2.</b>
+                            <b>11.11.2.2.</b>
                         
                         使用hexo theme tranquilpeak
                     </a>
@@ -5218,7 +5453,7 @@
         <li class="chapter " data-level="12" data-path="devops/index.html">
             
                 
-                    <a href="../../../../../devops/index.html">
+                    <a href="../../../devops/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5234,7 +5469,7 @@
         <li class="chapter " data-level="12.1" data-path="devops/git/index.html">
             
                 
-                    <a href="../../../../../devops/git/index.html">
+                    <a href="../../../devops/git/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5249,7 +5484,7 @@
         <li class="chapter " data-level="12.2" data-path="devops/gerrit/index.html">
             
                 
-                    <a href="../../../../../devops/gerrit/index.html">
+                    <a href="../../../devops/gerrit/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5264,7 +5499,7 @@
         <li class="chapter " data-level="12.3" data-path="devops/gitlab/index.html">
             
                 
-                    <a href="../../../../../devops/gitlab/index.html">
+                    <a href="../../../devops/gitlab/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5280,7 +5515,7 @@
         <li class="chapter " data-level="12.3.1" data-path="devops/gitlab/deploy_key.html">
             
                 
-                    <a href="../../../../../devops/gitlab/deploy_key.html">
+                    <a href="../../../devops/gitlab/deploy_key.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5300,7 +5535,7 @@
         <li class="chapter " data-level="12.4" data-path="devops/jenkins/index.html">
             
                 
-                    <a href="../../../../../devops/jenkins/index.html">
+                    <a href="../../../devops/jenkins/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5315,7 +5550,7 @@
         <li class="chapter " data-level="12.5" data-path="devops/ansible/index.html">
             
                 
-                    <a href="../../../../../devops/ansible/index.html">
+                    <a href="../../../devops/ansible/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5331,7 +5566,7 @@
         <li class="chapter " data-level="12.5.1" data-path="devops/ansible/startup/index.html">
             
                 
-                    <a href="../../../../../devops/ansible/startup/index.html">
+                    <a href="../../../devops/ansible/startup/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5347,7 +5582,7 @@
         <li class="chapter " data-level="12.5.1.1" data-path="devops/ansible/startup/install.html">
             
                 
-                    <a href="../../../../../devops/ansible/startup/install.html">
+                    <a href="../../../devops/ansible/startup/install.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5362,7 +5597,7 @@
         <li class="chapter " data-level="12.5.1.2" data-path="devops/ansible/startup/getting_started.html">
             
                 
-                    <a href="../../../../../devops/ansible/startup/getting_started.html">
+                    <a href="../../../devops/ansible/startup/getting_started.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5377,7 +5612,7 @@
         <li class="chapter " data-level="12.5.1.3" data-path="devops/ansible/startup/inventory.html">
             
                 
-                    <a href="../../../../../devops/ansible/startup/inventory.html">
+                    <a href="../../../devops/ansible/startup/inventory.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5392,7 +5627,7 @@
         <li class="chapter " data-level="12.5.1.4" data-path="devops/ansible/startup/dynamic_inventory.html">
             
                 
-                    <a href="../../../../../devops/ansible/startup/dynamic_inventory.html">
+                    <a href="../../../devops/ansible/startup/dynamic_inventory.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5407,7 +5642,7 @@
         <li class="chapter " data-level="12.5.1.5" data-path="devops/ansible/startup/patterns.html">
             
                 
-                    <a href="../../../../../devops/ansible/startup/patterns.html">
+                    <a href="../../../devops/ansible/startup/patterns.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5422,7 +5657,7 @@
         <li class="chapter " data-level="12.5.1.6" data-path="devops/ansible/startup/adhoc.html">
             
                 
-                    <a href="../../../../../devops/ansible/startup/adhoc.html">
+                    <a href="../../../devops/ansible/startup/adhoc.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5442,7 +5677,7 @@
         <li class="chapter " data-level="12.5.2" data-path="devops/ansible/playbooks/index.html">
             
                 
-                    <a href="../../../../../devops/ansible/playbooks/index.html">
+                    <a href="../../../devops/ansible/playbooks/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5458,7 +5693,7 @@
         <li class="chapter " data-level="12.5.2.1" data-path="devops/ansible/playbooks/introduce.html">
             
                 
-                    <a href="../../../../../devops/ansible/playbooks/introduce.html">
+                    <a href="../../../devops/ansible/playbooks/introduce.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5473,7 +5708,7 @@
         <li class="chapter " data-level="12.5.2.2" data-path="devops/ansible/playbooks/centos_upgrade.html">
             
                 
-                    <a href="../../../../../devops/ansible/playbooks/centos_upgrade.html">
+                    <a href="../../../devops/ansible/playbooks/centos_upgrade.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5488,7 +5723,7 @@
         <li class="chapter " data-level="12.5.2.3" data-path="devops/ansible/playbooks/install_rpm_through_sudo.html">
             
                 
-                    <a href="../../../../../devops/ansible/playbooks/install_rpm_through_sudo.html">
+                    <a href="../../../devops/ansible/playbooks/install_rpm_through_sudo.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5508,7 +5743,7 @@
         <li class="chapter " data-level="12.5.3" data-path="devops/ansible/modules/index.html">
             
                 
-                    <a href="../../../../../devops/ansible/modules/index.html">
+                    <a href="../../../devops/ansible/modules/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5524,7 +5759,7 @@
         <li class="chapter " data-level="12.5.3.1" data-path="devops/ansible/modules/command_module.html">
             
                 
-                    <a href="../../../../../devops/ansible/modules/command_module.html">
+                    <a href="../../../devops/ansible/modules/command_module.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5539,7 +5774,7 @@
         <li class="chapter " data-level="12.5.3.2" data-path="devops/ansible/modules/shell_module.html">
             
                 
-                    <a href="../../../../../devops/ansible/modules/shell_module.html">
+                    <a href="../../../devops/ansible/modules/shell_module.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5559,7 +5794,7 @@
         <li class="chapter " data-level="12.5.4" data-path="devops/ansible/dashboard/index.html">
             
                 
-                    <a href="../../../../../devops/ansible/dashboard/index.html">
+                    <a href="../../../devops/ansible/dashboard/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5575,7 +5810,7 @@
         <li class="chapter " data-level="12.5.4.1" data-path="devops/ansible/dashboard/semaphone.html">
             
                 
-                    <a href="../../../../../devops/ansible/dashboard/semaphone.html">
+                    <a href="../../../devops/ansible/dashboard/semaphone.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5595,7 +5830,7 @@
         <li class="chapter " data-level="12.5.5" data-path="devops/ansible/troubleshoot/index.html">
             
                 
-                    <a href="../../../../../devops/ansible/troubleshoot/index.html">
+                    <a href="../../../devops/ansible/troubleshoot/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5611,7 +5846,7 @@
         <li class="chapter " data-level="12.5.5.1" data-path="devops/ansible/troubleshoot/yaml_syntax_error_with_tab.html">
             
                 
-                    <a href="../../../../../devops/ansible/troubleshoot/yaml_syntax_error_with_tab.html">
+                    <a href="../../../devops/ansible/troubleshoot/yaml_syntax_error_with_tab.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5626,7 +5861,7 @@
         <li class="chapter " data-level="12.5.5.2" data-path="devops/ansible/troubleshoot/host_authenticity.html">
             
                 
-                    <a href="../../../../../devops/ansible/troubleshoot/host_authenticity.html">
+                    <a href="../../../devops/ansible/troubleshoot/host_authenticity.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5641,7 +5876,7 @@
         <li class="chapter " data-level="12.5.5.3" data-path="devops/ansible/troubleshoot/yum_permission_deny.html">
             
                 
-                    <a href="../../../../../devops/ansible/troubleshoot/yum_permission_deny.html">
+                    <a href="../../../devops/ansible/troubleshoot/yum_permission_deny.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5661,7 +5896,7 @@
         <li class="chapter " data-level="12.5.6" data-path="devops/ansible/tips/index.html">
             
                 
-                    <a href="../../../../../devops/ansible/tips/index.html">
+                    <a href="../../../devops/ansible/tips/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5677,7 +5912,7 @@
         <li class="chapter " data-level="12.5.6.1" data-path="devops/ansible/tips/execute_shell_if_package_not_installed.html">
             
                 
-                    <a href="../../../../../devops/ansible/tips/execute_shell_if_package_not_installed.html">
+                    <a href="../../../devops/ansible/tips/execute_shell_if_package_not_installed.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5692,7 +5927,7 @@
         <li class="chapter " data-level="12.5.6.2" data-path="devops/ansible/tips/host_key_checking_false.html">
             
                 
-                    <a href="../../../../../devops/ansible/tips/host_key_checking_false.html">
+                    <a href="../../../devops/ansible/tips/host_key_checking_false.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5707,7 +5942,7 @@
         <li class="chapter " data-level="12.5.6.3" data-path="devops/ansible/tips/variable_and_quotation_mark.html">
             
                 
-                    <a href="../../../../../devops/ansible/tips/variable_and_quotation_mark.html">
+                    <a href="../../../devops/ansible/tips/variable_and_quotation_mark.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5722,7 +5957,7 @@
         <li class="chapter " data-level="12.5.6.4" data-path="devops/ansible/tips/ansible_performance_tuning.html">
             
                 
-                    <a href="../../../../../devops/ansible/tips/ansible_performance_tuning.html">
+                    <a href="../../../devops/ansible/tips/ansible_performance_tuning.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5737,7 +5972,7 @@
         <li class="chapter " data-level="12.5.6.5" data-path="devops/ansible/tips/use_ansible_cfg.html">
             
                 
-                    <a href="../../../../../devops/ansible/tips/use_ansible_cfg.html">
+                    <a href="../../../devops/ansible/tips/use_ansible_cfg.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5752,7 +5987,7 @@
         <li class="chapter " data-level="12.5.6.6" data-path="devops/ansible/tips/unfinished_transactions_remain.html">
             
                 
-                    <a href="../../../../../devops/ansible/tips/unfinished_transactions_remain.html">
+                    <a href="../../../devops/ansible/tips/unfinished_transactions_remain.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5767,7 +6002,7 @@
         <li class="chapter " data-level="12.5.6.7" data-path="devops/ansible/tips/package_not_signed.html">
             
                 
-                    <a href="../../../../../devops/ansible/tips/package_not_signed.html">
+                    <a href="../../../devops/ansible/tips/package_not_signed.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5782,7 +6017,7 @@
         <li class="chapter " data-level="12.5.6.8" data-path="devops/ansible/tips/yum_no_package_matching.html">
             
                 
-                    <a href="../../../../../devops/ansible/tips/yum_no_package_matching.html">
+                    <a href="../../../devops/ansible/tips/yum_no_package_matching.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5807,7 +6042,7 @@
         <li class="chapter " data-level="12.6" data-path="devops/puppet/index.html">
             
                 
-                    <a href="../../../../../devops/puppet/index.html">
+                    <a href="../../../devops/puppet/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5827,7 +6062,7 @@
         <li class="chapter " data-level="13" data-path="read/index.html">
             
                 
-                    <a href="../../../../../read/index.html">
+                    <a href="../../../read/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5843,7 +6078,7 @@
         <li class="chapter " data-level="13.1" data-path="read/reset_kindle_paperwhite.html">
             
                 
-                    <a href="../../../../../read/reset_kindle_paperwhite.html">
+                    <a href="../../../read/reset_kindle_paperwhite.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5863,7 +6098,7 @@
         <li class="chapter " data-level="14" data-path="whoami.html">
             
                 
-                    <a href="../../../../../whoami.html">
+                    <a href="../../../whoami.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -5898,7 +6133,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../../../../../" >云图</a>
+        <a href="../../../" >云图</a>
     </h1>
 </div>
 
@@ -5908,19 +6143,53 @@
                 
                     <section class="normal" id="section-">
                     
-                        <p>&#x4E34;&#x65F6;cgroups&#x5728;&#x5176;&#x5305;&#x542B;&#x7684;&#x8FDB;&#x7A0B;&#x505C;&#x6B62;&#x7684;&#x65F6;&#x5019;&#x88AB;&#x81EA;&#x52A8;&#x91CA;&#x653E;&#x3002;&#x901A;&#x8FC7;&#x4F20;&#x9012;&#x53C2;&#x6570;<code>--remain-after-exit</code>&#x53EF;&#x4EE5;&#x4F7F;&#x5F97;<code>systemd-run</code>&#x5728;&#x8FDB;&#x7A0B;&#x7ED3;&#x675F;&#x7684;&#x65F6;&#x5019;&#x4F9D;&#x7136;&#x4FDD;&#x7559;&#x8FD0;&#x884C;&#x7684;&#x5355;&#x5143;&#x3002;</p>
-<p>&#x8981;&#x4F18;&#x96C5;&#x5730;&#x505C;&#x6B62;&#x5355;&#x5143;&#xFF0C;&#x4F7F;&#x7528;&#x547D;&#x4EE4;</p>
-<pre><code>systemctl stop name.service
-</code></pre><p>&#x5C06;&#x8FD9;&#x91CC;&#x7684;<code>name.service</code>&#x540D;&#x5B57;&#x66FF;&#x6362;&#x6210;&#x4F60;&#x5E0C;&#x671B;&#x505C;&#x6B62;&#x7684;&#x670D;&#x52A1;&#x3002;&#x8981;&#x505C;&#x6B62;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x5355;&#x5143;&#x4E2D;&#x7684;&#x8FDB;&#x7A0B;&#xFF0C;&#x6267;&#x884C;&#xFF1A;</p>
-<pre><code>systemctl kill name.service --kill-who=PID,... --signal=signal
-</code></pre><p>&#x8FD9;&#x91CC;&#x7684;<code>name</code>&#x662F;&#x5355;&#x5143;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x4F8B;&#x5982;<code>httpd.serivce</code>&#x3002;&#x4F7F;&#x7528;<code>--kill-who</code>&#x53C2;&#x6570;&#x6765;&#x9009;&#x62E9;&#x4F60;&#x5E0C;&#x671B;&#x505C;&#x6B62;&#x7684;cgroup&#x4E2D;&#x65AD;&#x8FDB;&#x7A0B;&#x3002;&#x8981;&#x540C;&#x65F6;&#x7EC8;&#x6B62;&#x591A;&#x4E2A;&#x8FDB;&#x7A0B;&#xFF0C;&#x5219;&#x4F7F;&#x7528;<code>,</code>&#x9017;&#x53F7;&#x5206;&#x9694;&#x7684;<code>PID</code>&#x3002;&#x5C06;<code>signal</code>&#x66FF;&#x6362;&#x6210;&#x4F60;&#x5E0C;&#x671B;&#x53D1;&#x9001;&#x7ED9;&#x6307;&#x5B9A;&#x8FDB;&#x7A0B;&#x7684;POSIX&#x4FE1;&#x53F7;&#x3002;&#x9ED8;&#x8BA4;&#x4FE1;&#x53F7;&#x662F;<code>SIGTERM</code>&#x3002;</p>
-<p>&#x4F8B;&#x5982;&#x53C2;&#x8003;&#x4E0A;&#x4F8B;&#x4E2D;&#x7684;&#x542F;&#x52A8;&#x7684;<code>toptest.serivce</code>&#xFF08;&#x89C1;<a href="using_control_groups.html">RHEL7 &#x4F7F;&#x7528;&#x63A7;&#x5236;&#x7EC4;</a>&#xFF09;</p>
-<pre><code>systemctl kill toptest.service
-</code></pre><p>&#x6301;&#x4E45;&#x5316;&#x7684;cgroup&#x5C06;&#x5728;<code>disabled</code>&#x5355;&#x5143;&#x7684;&#x65F6;&#x5019;&#x88AB;&#x91CA;&#x653E;&#xFF0C;&#x5E76;&#x4E14;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x88AB;&#x5220;&#x9664;&#xFF1A;</p>
-<pre><code>systemctl disable name.service
+                        <blockquote>
+<p>&#x867D;&#x7136;RHEL/CentOS 6&#x5F00;&#x59CB;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;<code>rsyslog</code>&#x4F5C;&#x4E3A;&#x7CFB;&#x7EDF;&#x65E5;&#x5FD7;&#x670D;&#x52A1;&#xFF0C;&#x4E0D;&#x8FC7;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x90E8;&#x7F72;<code>syslog-ng</code>&#x6765;&#x66FF;&#x4EE3;&#x3002;</p>
+</blockquote>
+<ul>
+<li>RHEL/CentOS 7&#x9700;&#x8981;&#x4ECE;<a href="http://fedoraproject.org/wiki/EPEL" target="_blank">EPEL</a>&#x5B89;&#x88C5;</li>
+</ul>
+<pre><code>rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+yum install syslog-ng
+</code></pre><ul>
+<li>&#x5728;Fedora&#x4E2D;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5B89;&#x88C5;</li>
+</ul>
+<pre><code>yum install syslog-ng
+</code></pre><p>&#x5B89;&#x88C5;&#x4E86;&#x4EE5;&#x4E0B;&#x8F6F;&#x4EF6;&#x5305;</p>
+<pre><code> eventlog          x86_64         0.2.13-7.fc23            fedora          24 k
+ ivykis            x86_64         0.36.2-5.fc23            fedora          40 k
+ libnet            x86_64         1.1.6-10.fc23            fedora          64 k
+ syslog-ng         x86_64         3.6.2-3.fc23             fedora         492 k
+</code></pre><ul>
+<li>&#x68C0;&#x67E5;&#x7248;&#x672C;</li>
+</ul>
+<pre><code>syslog-ng -V
+</code></pre><p>&#x8F93;&#x51FA;&#x4FE1;&#x606F;</p>
+<pre><code>syslog-ng 3.6.2
+Installer-Version: 3.6.2
+Revision:
+Compile-Date: Jun 19 2015 03:17:02
+Available-Modules: affile,afprog,afsocket-notls,afsocket-tls,afsocket,afstomp,afuser,basicfuncs,confgen,cryptofuncs,csvparser,dbparser,graphite,linux-kmsg-format,pseudofile,sdjournal,syslogformat,system-source
+Enable-Debug: off
+Enable-GProf: off
+Enable-Memtrace: off
+Enable-IPv6: on
+Enable-Spoof-Source: on
+Enable-TCP-Wrapper: on
+Enable-Linux-Caps: off
+</code></pre><ul>
+<li>&#x68C0;&#x67E5;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x8BED;&#x6CD5;</li>
+</ul>
+<pre><code>syslog-ng --syntax-only
+</code></pre><p>&#x8BE6;&#x7EC6;&#x7684;&#x68C0;&#x67E5;</p>
+<pre><code>syslog-ng -Fevd
+</code></pre><ul>
+<li>&#x68C0;&#x67E5;&#x72B6;&#x6001;</li>
+</ul>
+<pre><code>syslog-ng-ctl stats
 </code></pre><h1 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h1>
 <ul>
-<li><a href="https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Resource_Management_Guide/sec-Removing_Cgroups.html" target="_blank">2.2. REMOVING CONTROL GROUPS</a></li>
+<li><a href="http://padfoot999.proboards.com/thread/148/syslog-centos-step-installation-guide" target="_blank">SYSLOG-NG-CENTOS Step by Step Installation Guide</a></li>
 </ul>
 
                     
@@ -5932,47 +6201,47 @@
         </div>
 
         
-        <a href="../../../../../os/linux/kernel/cgroups/rhel7/using_control_groups.html" class="navigation navigation-prev " aria-label="Previous page: RHEL7 使用控制组"><i class="fa fa-angle-left"></i></a>
+        <a href="../../../os/linux/log/syslog-ng_3.5_fails_with_systemctl.html" class="navigation navigation-prev " aria-label="Previous page: systemd环境syslog-ng启动失败排查"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../../../../os/linux/kernel/cgroups/rhel7/modify_control_groups.html" class="navigation navigation-next " aria-label="Next page: RHEL7 修改控制组"><i class="fa fa-angle-right"></i></a>
+        <a href="../../../os/linux/kernel/index.html" class="navigation navigation-next " aria-label="Next page: 内核"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
 
         
-<script src="../../../../../gitbook/app.js"></script>
+<script src="../../../gitbook/app.js"></script>
 
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
     
 
     
-    <script src="../../../../../gitbook/plugins/gitbook-plugin-disqus/plugin.js"></script>
+    <script src="../../../gitbook/plugins/gitbook-plugin-disqus/plugin.js"></script>
     
 
     
-    <script src="../../../../../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.js"></script>
+    <script src="../../../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.js"></script>
     
 
     
-    <script src="../../../../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    <script src="../../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
     
 
     
-    <script src="../../../../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    <script src="../../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
     
 
     
-    <script src="../../../../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    <script src="../../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
     
 
     
-    <script src="../../../../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    <script src="../../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
     
 
     
-    <script src="../../../../../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    <script src="../../../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
     
 
 <script>
